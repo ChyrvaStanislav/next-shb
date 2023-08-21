@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RequestLimiter renders should RequestLimiter renders 1`] = `
+<DocumentFragment>
+  <div
+    class="root"
+  >
+    <div
+      class="requestLimiterIcon"
+    >
+      <span />
+      <span />
+    </div>
+    <p
+      class="requestLimiterHeading"
+    >
+      You have reached our daily limit for submit actions
+    </p>
+    <p
+      class="requestLimiterDescription"
+    >
+      Try to submit your request next day.
+    </p>
+    <button
+      class="button primary medium requestLimiterButton"
+      type="submit"
+    >
+      Continue Exploring
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`RequestLimiter renders should RequestLimiter renders with type 1`] = `
+<DocumentFragment>
+  <div
+    class="root rootSubscribe"
+  >
+    <div
+      class="requestLimiterIcon"
+    >
+      <span />
+      <span />
+    </div>
+    <p
+      class="requestLimiterHeading"
+    >
+      You have reached our daily limit for submit actions
+    </p>
+    <p
+      class="requestLimiterDescription"
+    >
+      Try to submit your request next day.
+    </p>
+  </div>
+</DocumentFragment>
+`;

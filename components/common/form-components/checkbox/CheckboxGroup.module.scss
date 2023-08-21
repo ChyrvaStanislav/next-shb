@@ -1,0 +1,45 @@
+@import "/styles/variables";
+
+.checkboxGroupContainer {
+  margin-bottom: 2.4rem;
+
+  @media (min-width: $bp-lg) {
+    margin-bottom: 2.8rem;
+  }
+
+  .label {
+    display: inline-block;
+    position: relative;
+    margin-bottom: .8rem;
+    color: $color-black;
+    font-family: $Source_Sans_Pro_Regular;
+    font-size: 1.6rem;
+    letter-spacing: 0;
+    line-height: 2.4rem;
+
+    @media (min-width: $bp-lg) {
+      margin-bottom: 1.2rem;
+    }
+
+    &.required {
+      padding-left: 1rem;
+
+      &::before {
+        content: '\2605';
+        position: absolute;
+        left: 0;
+        top: -0.5rem;
+        color: $color-negative;
+        font-size: 0.7rem;
+        letter-spacing: 0;
+        line-height: 2.4rem;
+      }
+    }
+  }
+
+  .checkboxContainer {
+    &>* {
+      margin-bottom: 0.8rem;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TagChip snapshot should TagChip match snapshot 1`] = `
+<DocumentFragment>
+  <a
+    class="greyChip some-class blogTagChip"
+    href="/blog?category=some-category"
+    target="_blank"
+  >
+    Some label
+  </a>
+</DocumentFragment>
+`;

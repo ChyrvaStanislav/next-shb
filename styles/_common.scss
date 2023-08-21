@@ -1,0 +1,95 @@
+@import "variables";
+
+//body {
+//  :global {
+//    html {
+//      body {
+//        .pswp__top-bar {
+//          .pswp__button {
+//            background-image: url(/src/v2_common/images/default-skin.svg);
+//          }
+//        }
+//
+//        .pswp__button--arrow--left::before,
+//        .pswp__button--arrow--right::before {
+//          background-image: url(/src/v2_common/images/default-skin.svg);
+//        }
+//      }
+//    }
+//  }
+//}
+
+
+.mainContainer {
+  max-width: 131.2rem;
+  margin: 0 auto;
+  padding: 0 1.6rem;
+}
+
+.internalContainer {
+  max-width: $breakpoint-lg;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 1.6rem;
+
+  @media (min-width: $breakpoint-small-tablet) {
+    padding: 0 2.4rem;
+  }
+}
+
+.innerContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -1.6rem;
+}
+
+@mixin basicGutter {
+  box-sizing: border-box;
+  flex-basis: 100%;
+  max-width: 100%;
+  padding-left: 16px;
+}
+
+.newInventoryContainer {
+  max-width: $bp-xl;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 1.6rem;
+
+  @media (min-width: $bp-sm) {
+    padding: 0 2.4rem;
+  }
+
+  @media (min-width: $bp-lg) {
+    padding: 0 4rem;
+  }
+}
+
+.newHubContainer {
+  max-width: $bp-xl;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 1.6rem;
+
+  @media (min-width: $bp-md) {
+    padding: 0 2.4rem;
+  }
+
+  @media (min-width: $bp-lg) {
+    padding: 0 4rem;
+  }
+
+  @media (min-width: $bp-xl) {
+    padding: 0 14.8rem;
+  }
+}
+
+// with lineClamp need use -webkit-line-clamp: 1;
+@mixin lineClamp {
+  word-break: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* stylelint-disable-next-line value-no-vendor-prefix */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}

@@ -1,0 +1,19 @@
+@import "/styles/variables";
+
+.displayNone {
+  @media (max-width: $breakpoint-md) {
+    display: none;
+  }
+}
+
+.captchaContainer {
+  @media (max-width: 350px) {
+    left: 0 !important;
+    transform: scale(0.7);
+  }
+
+  @media (max-width: $breakpoint-md) {
+    left: 0 !important;
+    transform: scale(0.8);
+  }
+}

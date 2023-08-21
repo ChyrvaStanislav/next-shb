@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Counter renders should Counter renders 1`] = `
+<DocumentFragment>
+  <span
+    class="counter someClass"
+  >
+    2/150
+  </span>
+</DocumentFragment>
+`;

@@ -1,0 +1,40 @@
+@import "/styles/variables";
+
+$animation-visible-z-index: 110;
+
+.modal-enter {
+  visibility: visible;
+  opacity: 0.01;
+  z-index: $animation-visible-z-index;
+}
+
+.modal-enter.modal-enter-active {
+  visibility: visible;
+  opacity: 1;
+  z-index: $animation-visible-z-index;
+  transition: opacity 500ms ease-in;
+}
+
+.modal-enter-done {
+  visibility: visible;
+  opacity: 1;
+  z-index: $animation-visible-z-index;
+}
+
+.modal-exit {
+  visibility: visible;
+  opacity: 1;
+  z-index: $animation-visible-z-index;
+}
+
+.modal-exit.modal-exit-active {
+  visibility: visible;
+  z-index: $animation-visible-z-index;
+  transition: opacity 500ms ease-in;
+}
+
+.modal-exit-done {
+  visibility: visible;
+  opacity: 0;
+  z-index: -1;
+}

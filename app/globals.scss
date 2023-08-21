@@ -1,0 +1,60 @@
+@import 'variables',
+'fonts',
+'reset',
+'styles';
+
+html {
+  font-size: 62.5%;
+  overflow: initial;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+html, body {
+  min-width: 320px;
+}
+
+* {
+  &:active, &:focus {
+    outline: none;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  color: $color-black;
+  font-family: $Source_Sans_Pro_Regular;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: inherit;
+  flex-grow: 1;
+}
+
+main {
+  display: block;
+}
+
+b, strong {
+  font-family: $Source_Sans_Pro_Bold;
+}
+
+em {
+  font-style: italic;
+}
+
+code {
+  font-family: monospace;
+}
+
+footer {
+  margin-top: auto;
+  z-index: 1;
+}

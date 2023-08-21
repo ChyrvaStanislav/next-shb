@@ -1,0 +1,697 @@
+@import "variables";
+@import "common";
+
+$card-hover-box-shadow: 0 0.2rem 4rem 0 rgb(10 10 72 / 20%);
+$card-hover-box-shadow-2: 0 1rem 2rem 0 rgb(10 10 72 / 20%);
+$circle-box-shadow: 0 0 0.2rem 0 rgb(0 0 0 / 15%);
+$circle-box-shadow-2: 0.1rem 0.1rem 0.4rem 0 rgb(0 0 0 / 15%);;
+
+.postItemsInner {
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
+    .imageContainer {
+      img {
+        transform: scale(1.08);
+      }
+    }
+  }
+}
+
+.imageContainer {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  margin-bottom: 1.2rem;
+  overflow: hidden;
+  border-radius: 0.4rem 0.4rem 0 0;
+  @media (min-width: $bp-lg) {
+    margin-bottom: 1.6rem;
+  }
+
+  .image {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 0.4rem 0.4rem 0 0;
+    background-color: $color-preloaders-light;
+    transition: transform 1s ease;
+  }
+
+  .imageAdditional {
+    border-radius: 0;
+
+    @media (min-width: $bp-md) {
+      height: 18.8rem;
+    }
+
+    @media (min-width: $bp-xl) {
+      height: 21.2rem;
+    }
+  }
+
+  @media (min-width: $bp-sm) {
+    height: 22.4rem;
+  }
+
+  @media (min-width: $bp-lg) {
+    height: 24rem;
+  }
+
+  @media (min-width: $bp-xl) {
+    height: 24rem;
+  }
+}
+
+.additionalPostImageContainer {
+  border-radius: 0;
+  @media (max-width: #{$bp-sm - 0.5}) {
+    display: none;
+  }
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+
+  .title {
+    margin-bottom: .8rem;
+    color: $color-black;
+
+    @media (min-width: $bp-lg) {
+      margin-bottom: 1.2rem;
+    }
+
+    @media (min-width: $bp-xl) {
+      margin-bottom: 1.6rem;
+    }
+
+    .link {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+
+  .description {
+    @include lineClamp;
+
+    -webkit-line-clamp: 2;
+    color: $color-black;
+    margin-bottom: 0;
+
+    &.show {
+      display: inline-block;
+      margin-bottom: .8rem;
+    }
+  }
+
+  .additionalInfoContainer {
+    margin-bottom: 1rem;
+    @media (min-width: $bp-lg) {
+      margin-bottom: 1.2rem;
+    }
+
+    .date {
+      display: inline-block;
+      padding-right: 0.8rem;
+      color: $color-secondary;
+      border-right: 0.1rem solid $color-secondary;
+
+      &.noBorder {
+        border-right: none;
+      }
+
+      @media (min-width: $bp-md) {
+        padding-right: .7rem;
+      }
+    }
+
+    .timeRead {
+      display: inline-block;
+      margin-left: .8rem;
+      margin-right: 0.8rem;
+      color: $color-secondary;
+    }
+  }
+}
+
+.additionalPost {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $bp-sm) {
+    flex-direction: row;
+  }
+
+  @media (min-width: $bp-md) {
+    flex-direction: column;
+  }
+
+  @media (min-width: $bp-lg) {
+    &:hover {
+      box-shadow: $card-hover-box-shadow;
+    }
+  }
+
+  .infoContainer {
+    @media (min-width: $bp-sm) {
+      flex-grow: 1;
+    }
+
+    @media (min-width: $bp-md) {
+      flex-grow: initial;
+    }
+
+    @media (min-width: $bp-lg) {
+      padding: 0 1.6rem 2rem;
+    }
+  }
+
+  .moreThenSm {
+    @media (min-width: $bp-sm) {
+      display: block;
+      flex-basis: 12rem;
+      order: 2;
+      margin-left: 1.6rem;
+      height: 7.6rem;
+    }
+
+    @media (min-width: $bp-md) {
+      display: block;
+      flex-basis: initial;
+      margin-left: 0;
+      order: 1;
+      height: initial;
+    }
+  }
+
+  .moreThenSmCat {
+    @media (min-width: $bp-sm) {
+      padding-top: 0;
+    }
+  }
+
+  .imageContainer {
+    width: 100%;
+    @media (min-width: $bp-md) {
+      margin-right: 0;
+      margin-bottom: 1.6rem;
+      height: initial;
+    }
+
+    .image {
+      width: 100%;
+    }
+  }
+
+  .category {
+    margin-bottom: 1.2rem;
+
+    &:hover {
+      color: $color-secondary-accent-hover;
+    }
+  }
+
+  .title {
+    margin-bottom: 0;
+  }
+
+  .titleAdditional {
+    margin-bottom: .8rem;
+  }
+
+  .additionalInfoContainer {
+    margin-bottom: .8rem;
+
+    @media (min-width: $bp-sm) {
+      margin-bottom: 1.2rem;
+    }
+
+    @media (min-width: $bp-lg) {
+      margin-bottom: 1.6rem;
+    }
+  }
+}
+
+.relatedSolution {
+  flex-direction: column;
+
+  &:hover {
+    box-shadow: $card-hover-box-shadow;
+  }
+  @media (min-width: $bp-lg) {
+    float: left;
+    max-width: 30rem;
+  }
+
+  &:nth-child(2n+1) {
+    margin-right: 2rem;
+  }
+
+  .imageContainer {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1.6rem;
+  }
+
+  .category {
+    margin-bottom: 1.2rem;
+  }
+
+  .additionalInfoContainer {
+    margin-bottom: 1rem;
+  }
+}
+
+.postLabel {
+  display: none;
+}
+
+.whiteCircle,
+.imgWrapper {
+  height: 100%;
+  width: 100%;
+}
+
+.relatedSolutionMobileInner,
+.relatedSolutionDesktopInner,
+.additionalPostBlog {
+  flex-direction: column;
+
+  .whiteCircle,
+  .imgWrapper {
+    height: auto;
+    width: auto;
+  }
+
+  .noTagsUnder {
+    margin-bottom: 0;
+  }
+
+  .postLabel {
+    display: flex;
+    height: 2.8rem;
+    width: 100%;
+    background: rgb(49 59 113 / 10%);
+    border-radius: 0.2rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.2rem;
+
+    @media (min-width: $bp-sm) {
+      margin-bottom: 1.4rem;
+    }
+
+    @media (min-width: $bp-md) {
+      margin-bottom: 0;
+    }
+
+    .postType {
+      font-family: $Source_Sans_Pro_Bold;
+      font-size: 1.2rem;
+      line-height: 1.6rem;
+      letter-spacing: 0.15rem;
+      text-transform: uppercase;
+      text-align: center;
+      color: $color-bg-darkblue-02;
+      margin: 0;
+    }
+  }
+}
+
+.postItemsInner.additionalPostBlog {
+  @media (min-width: $bp-md) {
+    flex-direction: column;
+    width: 34.8rem;
+    float: left;
+
+    &:nth-child(2n) {
+      margin-left: 2.4rem;
+      margin-right: 2.4rem;
+    }
+  }
+
+  @media (min-width: $bp-lg) {
+    width: 29.9rem;
+    margin-left: 1rem;
+
+    &:last-child {
+      margin-left: 0;
+      margin-right: 3.5rem;
+    }
+
+    &:first-child {
+      margin-left: 3.5rem;
+    }
+
+    &:nth-child(2n) {
+      margin-left: 2rem;
+      margin-right: 2rem;
+    }
+
+    &:hover {
+      box-shadow: $card-hover-box-shadow;
+    }
+  }
+
+  @media (min-width: $bp-xl) {
+    width: 32.8rem;
+
+    &:nth-child(2n) {
+      margin-left: 2.4rem;
+      margin-right: 2.4rem;
+    }
+
+    &:hover {
+      box-shadow: $card-hover-box-shadow-2;
+    }
+  }
+
+  .postLabel {
+    @media (min-width: $bp-md) {
+      flex: auto;
+    }
+  }
+
+  .imageContainer {
+    @media (min-width: $bp-md) {
+      order: unset;
+      width: 100%;
+      height: auto;
+      margin-right: 0;
+      margin-bottom: 1.6rem;
+      max-width: none;
+      max-height: none;
+      margin-left: 0;
+    }
+
+    &.solutionType {
+      .imgWrapper {
+        @media (min-width: $bp-md) {
+          width: 100%;
+          height: 16rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        @media (min-width: $bp-xl) {
+          height: 18rem;
+        }
+      }
+
+      .whiteCircle {
+        @media (min-width: $bp-md) {
+          width: 10.1rem;
+          height: 10.1rem;
+          box-shadow: $circle-box-shadow-2;
+        }
+
+        @media (min-width: $bp-xl) {
+          width: 12rem;
+          height: 12rem;
+        }
+      }
+
+      img {
+        object-fit: contain;
+
+        @media (min-width: $bp-md) {
+          width: 8.4rem;
+          height: 8.4rem;
+        }
+
+        @media (min-width: $bp-xl) {
+          width: 9.4rem;
+          height: 9.4rem;
+        }
+      }
+    }
+
+    img {
+      @media (min-width: $bp-md) {
+        height: 16rem;
+        width: 100%;
+        object-fit: cover;
+      }
+
+      @media (min-width: $bp-xl) {
+        height: 18rem;
+      }
+    }
+  }
+
+  .infoContainer {
+    @media (min-width: $bp-md) {
+      order: unset;
+      min-height: 12.6rem;
+    }
+    @media (min-width: $bp-lg) {
+      min-height: 16.5rem;
+    }
+    @media (min-width: $bp-xl) {
+      min-height: 16.8rem;
+    }
+  }
+}
+
+.relatedSolutionMobileInner,
+.additionalPostBlog {
+  @media (min-width: $bp-sm) {
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .postLabel {
+    @media (min-width: $bp-sm) {
+      flex: 0 0 100%;
+    }
+  }
+
+  .imageContainer {
+    @media (min-width: $bp-sm) {
+      order: 1;
+      margin-right: 0;
+      margin-left: 1.6rem;
+      height: auto;
+      width: auto;
+      max-width: 12.2rem;
+      max-height: 7.5rem;
+      flex: 1;
+
+      &.solutionType {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: no-repeat url('/src/v2_common/images/blog/solution-logo-bg.jpg') $color-white;
+        background-position: 50% 50%;
+        background-size: cover;
+
+        .whiteCircle {
+          width: 5.6rem;
+          height: 5.6rem;
+          border-radius: 50%;
+          box-shadow: $circle-box-shadow;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        img {
+          width: 4.4rem;
+          height: 4.4rem;
+          border-radius: 50%;
+        }
+      }
+    }
+    @media (min-width: $bp-md) {
+      width: 100%;
+      height: auto;
+      margin-right: 0;
+    }
+  }
+
+  .infoContainer {
+    @media (min-width: $bp-sm) {
+      order: 0;
+      flex: 1;
+    }
+  }
+
+  .category {
+    @media (min-width: $bp-sm) {
+      margin-bottom: 1.2rem;
+    }
+  }
+}
+
+.relatedSolutionDesktopInner {
+  @media (min-width: $bp-md) {
+    flex-direction: column;
+  }
+  @media (min-width: $bp-lg) {
+    width: 30rem;
+    float: left;
+    margin-left: 2.4rem;
+    margin-top: 3rem;
+    margin-bottom: 2.4rem;
+
+    &:nth-child(2n) {
+      margin-left: 2rem;
+      margin-right: 2rem;
+    }
+
+    &:hover {
+      box-shadow: $card-hover-box-shadow;
+    }
+  }
+  @media (min-width: $bp-xl) {
+    width: 32.8rem;
+    margin-left: 3.6rem;
+
+    &:nth-child(2n) {
+      margin-left: 3.6rem;
+    }
+
+    &:hover {
+      box-shadow: $card-hover-box-shadow-2;
+    }
+  }
+
+  .infoContainer {
+    @media (min-width: $bp-md) {
+      padding: 0 1.6rem 2.4rem;
+      padding-bottom: 3.2rem;
+      min-height: 9.4rem;
+    }
+
+    @media (min-width: $bp-lg) {
+      padding-bottom: 2rem;
+      min-height: 16.5rem;
+    }
+
+    @media (min-width: $bp-xl) {
+      min-height: 17rem;
+    }
+
+    .title {
+      margin-bottom: .8rem;
+
+      @media (min-width: $bp-lg) {
+        margin-bottom: .8rem;
+      }
+
+      @media (min-width: $bp-xl) {
+        margin-bottom: .6rem;
+      }
+    }
+  }
+
+  .imageContainer {
+    @media (min-width: $bp-md) {
+      width: 100%;
+      height: auto;
+      margin-right: 0;
+      margin-bottom: 1.6rem;
+    }
+
+    .imageAdditional {
+      @media (min-width: $bp-md) {
+        height: 16rem;
+      }
+
+      @media (min-width: $bp-xl) {
+        height: 17.8rem;
+      }
+    }
+  }
+
+  .category {
+    @media (min-width: $bp-lg) {
+      margin-bottom: 1.2rem;
+    }
+  }
+
+  .additionalInfoContainer {
+    order: 1;
+    @media (min-width: $bp-md) {
+      margin-bottom: 1.2rem;
+      @media (min-width: $bp-lg) {
+        margin-bottom: 1.6rem;
+      }
+
+      .date {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+      }
+
+      .timeRead {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+      }
+    }
+  }
+
+  .titleAdditional {
+    order: 0;
+    @media (min-width: $bp-md) {
+      font-size: 1.8rem;
+      line-height: 2.4rem;
+    }
+
+    &.additionalInfoContainerCat {
+      @media (min-width: $bp-md) {
+        padding-top: 3.2rem;
+      }
+    }
+  }
+
+  .tagsContainer {
+    order: 2;
+  }
+}
+
+.tagsContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 2.4rem;
+  overflow: hidden;
+  margin-top: 1.2rem;
+  @media (min-width: $bp-lg) {
+    margin-top: 1.6rem;
+  }
+
+  .tagItem {
+    margin-right: .8rem;
+
+    &.dots {
+      pointer-events: none;
+      cursor: default;
+      visibility: hidden;
+      margin-right: 0;
+
+      &.show {
+        visibility: visible;
+      }
+    }
+  }
+}
+
+.blogPostDescriptionMarkdown {
+  @include lineClamp;
+
+  -webkit-line-clamp: 2;
+  position: relative;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  max-height: 4.8rem;
+
+  @media (min-width: $bp-lg) {
+    -webkit-line-clamp: 2;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    max-height: 5.6rem;
+  }
+}

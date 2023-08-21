@@ -1,0 +1,208 @@
+@import "/styles/variables";
+
+.container {
+  * {
+    color: $color-black;
+    font-family: $Source_Sans_Pro_Regular;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+
+    @media (min-width: $bp-lg) {
+      font-size: 1.8rem;
+      line-height: 2.8rem;
+    }
+  }
+
+  strong {
+    font-family: $Source_Sans_Pro_Semibold;
+    font-size: inherit;
+    line-height: inherit;
+  }
+
+  a {
+    color: $color-secondary-accent;
+    font-family: $Source_Sans_Pro_Regular;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    cursor: pointer;
+    transition: color 300ms linear;
+    text-decoration: none;
+    position: relative;
+
+    @media (min-width: $bp-lg) {
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      padding: 1rem;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      position: absolute;
+    }
+
+    &:hover {
+      color: $color-secondary-accent-hover;
+      text-decoration: underline;
+    }
+  }
+
+  h5 {
+    color: $color-black;
+    font-family: $Source_Sans_Pro_Bold;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin-bottom: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    @media (min-width: $bp-lg) {
+      margin-bottom: 1.2rem;
+    }
+  }
+
+  h4 {
+    font-family: $Museo_Sans_Bold;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    margin-bottom: 0.8rem;
+
+    @media (min-width: $bp-lg) {
+      font-size: 1.8rem;
+      line-height: 2.4rem;
+      margin-bottom: 1.2rem;
+    }
+  }
+
+  h3 {
+    font-family: $Museo_Sans_Bold;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    margin-bottom: 0.8rem;
+
+    @media (min-width: $bp-lg) {
+      font-size: 2.2rem;
+      line-height: 2.8rem;
+      margin-bottom: 1.2rem;
+    }
+  }
+
+  h2 {
+    font-family: $Museo_Sans_Bold;
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+    margin-bottom: 1.2rem;
+
+    @media (min-width: $bp-lg) {
+      font-size: 2.6rem;
+      line-height: 3.6rem;
+      margin-bottom: 1.6rem;
+    }
+  }
+
+  h1 {
+    font-family: $Museo_Sans_Bold;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    margin-bottom: 1.6rem;
+
+    @media (min-width: $bp-lg) {
+      font-size: 3.2rem;
+      line-height: 4rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  ul {
+    padding-top: 0;
+    padding-bottom: 1.6rem;
+    @media (min-width: $bp-lg) {
+      padding-top: 0;
+      padding-bottom: 1.2rem;
+    }
+
+    &>li {
+      position: relative;
+      padding-left: 1.9rem;
+      margin-bottom: 0.6rem;
+
+      @media (min-width: $bp-sm) {
+        padding-left: 1.9rem;
+      }
+
+      @media (min-width: $bp-md) {
+        margin-bottom: 0.8rem;
+      }
+
+      &::before {
+        content: "\2022";
+        position: absolute;
+        left: 0;
+        top:  -0.2rem;
+        font-size: 1.3em;
+      }
+    }
+
+    ul {
+      &>li {
+        list-style: none;
+
+        &::before {
+          content: '-';
+          top: 0;
+          left: 0;
+          background-color: transparent;
+        }
+      }
+    }
+  }
+
+  ol {
+    list-style: none;
+    counter-reset: my-awesome-counter;
+    padding-top: 0.8rem;
+    padding-bottom: 1.6rem;
+
+    @media (min-width: $bp-sm) {
+      position: relative;
+    }
+    @media (min-width: $bp-lg) {
+      padding-top: 0;
+      padding-bottom: 2rem;
+    }
+
+    &>li {
+      padding-left: 0;
+      margin-bottom: 0.6rem;
+
+      @media (min-width: $bp-md) {
+        margin-bottom: 0.8rem;
+      }
+
+      counter-increment: my-awesome-counter;
+
+      @media (min-width: $bp-sm) {
+        padding-left: 0;
+      }
+
+      &::before {
+        display: block;
+        float: left;
+        margin-right: 0.4rem;
+        content: counter(my-awesome-counter) ". ";
+        color: $color-black;
+        font-family: $Source_Sans_Pro_Bold;
+      }
+    }
+  }
+
+  p ~ p,
+  p ~ ol,
+  p ~ ul {
+    margin-top: 0.9rem;
+  }
+}

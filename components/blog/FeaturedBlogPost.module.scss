@@ -1,0 +1,224 @@
+@import "~v2_common/styles/variables";
+
+.container {
+  overflow: hidden;
+  background: $color-bg-darkblue-03 url("/src/v2_common/images/blog/blog-page-568-320.jpg") no-repeat center;
+  background-size: cover;
+  height: 12.8rem;
+
+  @media (min-width: $bp-md) {
+    background-image: url("/src/v2_common/images/blog/blog-page-1023-569.jpg");
+    height: 16.4rem;
+  }
+  @media (min-width: $bp-lg) {
+    background-image: url("/src/v2_common/images/blog/blog-page-1920-1024.jpg");
+    height: 24rem;
+  }
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: $bp-xl;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 2.4rem 1.6rem;
+  @media (min-width: $bp-sm) {
+    padding: 3.2rem 1.6rem 3.6rem;
+  }
+  @media (min-width: $bp-md) {
+    flex-direction: row;
+    padding: 4.8rem 2.4rem 4rem;
+  }
+  @media (min-width: $bp-lg) {
+    padding: 6.4rem 4rem;
+  }
+  @media (min-width: $bp-xl) {
+    padding: 5.2rem 4rem;
+  }
+}
+
+.imageContainer {
+  box-sizing: border-box;
+  flex-shrink: 0;
+  margin-bottom: 1.6rem;
+  height: 19.6rem;
+
+  @media (min-width: $bp-sm) {
+    height: 24rem;
+  }
+
+  @media (min-width: $bp-md) {
+    flex-basis: 40%;
+    height: 19.2rem;
+    margin-right: 2.4rem;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $bp-lg) {
+    flex-basis: 52%;
+    height: 37.2rem;
+    margin-right: 5.2rem;
+  }
+
+  @media (min-width: $bp-xl) {
+    flex-basis: 65.6rem;
+    height: 44rem;
+  }
+
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: .2rem;
+  }
+}
+
+.infoContainer {
+  box-sizing: border-box;
+  color: $color-white;
+
+  @media (min-width: $bp-md) {
+    flex-grow: 1;
+  }
+
+  @media (min-width: $bp-xl) {
+    flex-basis: 46.8rem;
+    flex-grow: initial;
+  }
+
+  .category {
+    color: $color-white;
+    text-decoration: none;
+    margin-bottom: 1.2rem;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+
+    @media (min-width: $bp-lg) {
+      margin-bottom: 1.6rem;
+    }
+
+    &:hover {
+      color: $color-secondary-accent-hover;
+    }
+  }
+
+  .header {
+    color: $color-white;
+    margin-bottom: 1.2rem;
+    @media (min-width: $bp-lg) {
+      margin-bottom: 1.6rem;
+    }
+
+    .link {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $color-secondary-accent-hover;
+      }
+    }
+  }
+
+  .description {
+    display: none;
+    color: $color-white;
+
+    @media (min-width: $bp-md) {
+      display: inline-block;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .additionalInfoContainer {
+    margin-bottom: 1.6rem;
+
+    @media (min-width: $bp-md) {
+      margin-bottom: 1.2rem;
+    }
+
+    @media (min-width: $bp-lg) {
+      margin-bottom: 1.6rem;
+    }
+
+    .date {
+      color: $color-white-a65;
+      display: inline-block;
+      padding-right: 1.2rem;
+      border-right: 0.1rem solid $color-white-a65;
+    }
+
+    .timeRead {
+      color: $color-white-a65;
+      display: inline-block;
+      margin-left: 1.2rem;
+    }
+  }
+}
+
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $bp-md) {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .buttonContainer {
+    .button {
+      width: 100%;
+      margin-top: .8rem;
+
+      @media (min-width: $bp-md) {
+        width: initial;
+        padding: .7rem 2.2rem;
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+.tagsContainer {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: $bp-md) {
+    width: calc(100% - 16rem);
+  }
+
+  .tagItem {
+    margin-right: .8rem;
+    margin-bottom: 1.2rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.blogMainTitle {
+  font-family: $Museo_Sans_Semibold;
+  font-size: 2.4rem;
+  color: $color-white;
+  line-height: 3.2rem;
+  max-width: 15.4rem;
+  padding: 3.2rem 0 0 1.6rem;
+  @media (min-width: $bp-md) {
+    padding: 4rem 0 0 2.4rem;
+    font-size: 3.2rem;
+    line-height: 4rem;
+    max-width: 21rem;
+  }
+  @media (min-width: $bp-lg) {
+    padding: 6.4rem 0 0 4.2rem;
+    font-size: 4.8rem;
+    line-height: 5.6rem;
+    max-width: 40rem;
+  }
+}

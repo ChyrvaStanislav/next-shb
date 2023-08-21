@@ -1,0 +1,118 @@
+@import "/styles/variables";
+
+.button {
+    display: inline-block;
+    box-sizing: border-box;
+    white-space: nowrap;
+    border-radius: 0.2rem;
+    font-family: $Museo_Sans_Semibold;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    user-select: none;
+    outline: none;
+    letter-spacing: 0.15rem;
+    transition: color .3s ease;
+    transition-property: color, border-color, background-color;
+
+    &.disabled {
+        color: $color-secondary-disabled;
+        border-color: transparent;
+        background-color: $color-bg-primary;
+
+        &:hover {
+            @media (hover: hover) {
+                color: $color-secondary-disabled;
+                border-color: transparent;
+                background-color: $color-bg-primary;
+            }
+        }
+
+        cursor: not-allowed;
+    }
+
+    &:hover {
+        @media (hover: hover) {
+            border-color: $color-primary-hover2;
+            background-color: $color-primary-hover2;
+            color: $color-white;
+        }
+    }
+
+    &:active {
+        border-color: $color-primary-accent-pressed;
+        background-color: $color-primary-accent-pressed;
+        color: $color-white;
+    }
+}
+
+.primary {
+    border: 0.1rem solid $color-primary-accent;
+    background-color: $color-primary-accent;
+    color: $color-white;
+    font-family: $Museo_Sans_Bold;
+}
+
+.secondary {
+    border: 0.1rem solid transparent;
+    background-color: transparent;
+    color: $color-primary-accent;
+}
+
+.outline {
+    border: 0.1rem solid $color-primary-accent;
+    background-color: transparent;
+    color: $color-primary-accent;
+    font-family: $Museo_Sans_Bold;
+
+    &.disabled {
+        border-color: $color-secondary-disabled;
+        background-color: transparent;
+
+        &:hover {
+            @media (hover: hover) {
+                border-color: $color-secondary-disabled;
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+.medium {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding: 0.7rem 1.6rem;
+}
+
+.small {
+    letter-spacing: 0.12rem;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    padding: 0.7rem 1.2rem;
+}
+
+.link {
+    border: none;
+    outline: none;
+    text-transform: none;
+    padding: 0;
+    margin: 0;
+    background: none;
+    color: $color-secondary-accent;
+    font-family: $Source_Sans_Pro_Semibold;
+    font-size: 1.4rem;
+    line-height: 2rem;
+
+    @media (min-width: $breakpoint-sm) {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+    }
+
+    &:hover {
+        @media (hover: hover) {
+            background: none;
+            color: $color-secondary-accent-hover;
+        }
+    }
+}

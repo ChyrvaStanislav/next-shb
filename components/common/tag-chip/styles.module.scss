@@ -1,0 +1,29 @@
+@import "/styles/variables";
+
+$color-darkblue-hover: #1A255A;
+
+.greyChip {
+  display: inline-block;
+  color: $color-black-secondary;
+  font-family: $Source_Sans_Pro_Regular;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  background-color: $color-tertiary-buttons;
+  box-sizing: border-box;
+  padding: .2rem .8rem;
+  text-decoration: none;
+  border-radius: .3rem;
+
+  &:hover {
+    background-color: $color-black-a15;
+  }
+}
+
+.blueChip {
+  color: $color-white-a65;
+  background-color: $color-bg-darkblue-01;
+
+  &:hover {
+    background-color: $color-darkblue-hover;
+  }
+}

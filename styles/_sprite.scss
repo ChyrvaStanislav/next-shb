@@ -1,0 +1,442 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$-annual-subscription-name: 'AnnualSubscription';
+$-annual-subscription-x: 0px;
+$-annual-subscription-y: 84px;
+$-annual-subscription-offset-x: 0px;
+$-annual-subscription-offset-y: -84px;
+$-annual-subscription-width: 56px;
+$-annual-subscription-height: 56px;
+$-annual-subscription-total-width: 372px;
+$-annual-subscription-total-height: 308px;
+$-annual-subscription-image: '/src/v2_common/images/sprite.png';
+$-annual-subscription: (0px, 84px, 0px, -84px, 56px, 56px, 372px, 308px, '/src/v2_common/images/sprite.png', 'AnnualSubscription', );
+$-archive-name: 'Archive';
+$-archive-x: 224px;
+$-archive-y: 252px;
+$-archive-offset-x: -224px;
+$-archive-offset-y: -252px;
+$-archive-width: 36px;
+$-archive-height: 48px;
+$-archive-total-width: 372px;
+$-archive-total-height: 308px;
+$-archive-image: '/src/v2_common/images/sprite.png';
+$-archive: (224px, 252px, -224px, -252px, 36px, 48px, 372px, 308px, '/src/v2_common/images/sprite.png', 'Archive', );
+$-audit-name: 'Audit';
+$-audit-x: 56px;
+$-audit-y: 84px;
+$-audit-offset-x: -56px;
+$-audit-offset-y: -84px;
+$-audit-width: 56px;
+$-audit-height: 56px;
+$-audit-total-width: 372px;
+$-audit-total-height: 308px;
+$-audit-image: '/src/v2_common/images/sprite.png';
+$-audit: (56px, 84px, -56px, -84px, 56px, 56px, 372px, 308px, '/src/v2_common/images/sprite.png', 'Audit', );
+$-cd-pipelines-name: 'CdPipelines';
+$-cd-pipelines-x: 112px;
+$-cd-pipelines-y: 84px;
+$-cd-pipelines-offset-x: -112px;
+$-cd-pipelines-offset-y: -84px;
+$-cd-pipelines-width: 56px;
+$-cd-pipelines-height: 56px;
+$-cd-pipelines-total-width: 372px;
+$-cd-pipelines-total-height: 308px;
+$-cd-pipelines-image: '/src/v2_common/images/sprite.png';
+$-cd-pipelines: (112px, 84px, -112px, -84px, 56px, 56px, 372px, 308px, '/src/v2_common/images/sprite.png', 'CdPipelines', );
+$-containerized-infrastructure-name: 'ContainerizedInfrastructure';
+$-containerized-infrastructure-x: 168px;
+$-containerized-infrastructure-y: 0px;
+$-containerized-infrastructure-offset-x: -168px;
+$-containerized-infrastructure-offset-y: 0px;
+$-containerized-infrastructure-width: 56px;
+$-containerized-infrastructure-height: 56px;
+$-containerized-infrastructure-total-width: 372px;
+$-containerized-infrastructure-total-height: 308px;
+$-containerized-infrastructure-image: '/src/v2_common/images/sprite.png';
+$-containerized-infrastructure: (168px, 0px, -168px, 0px, 56px, 56px, 372px, 308px, '/src/v2_common/images/sprite.png', 'ContainerizedInfrastructure', );
+$-costs-control-name: 'CostsControl';
+$-costs-control-x: 168px;
+$-costs-control-y: 56px;
+$-costs-control-offset-x: -168px;
+$-costs-control-offset-y: -56px;
+$-costs-control-width: 56px;
+$-costs-control-height: 56px;
+$-costs-control-total-width: 372px;
+$-costs-control-total-height: 308px;
+$-costs-control-image: '/src/v2_common/images/sprite.png';
+$-costs-control: (168px, 56px, -168px, -56px, 56px, 56px, 372px, 308px, '/src/v2_common/images/sprite.png', 'CostsControl', );
+$-customize-name: 'Customize';
+$-customize-x: 0px;
+$-customize-y: 140px;
+$-customize-offset-x: 0px;
+$-customize-offset-y: -140px;
+$-customize-width: 56px;
+$-customize-height: 56px;
+$-customize-total-width: 372px;
+$-customize-total-height: 308px;
+$-customize-image: '/src/v2_common/images/sprite.png';
+$-customize: (0px, 140px, 0px, -140px, 56px, 56px, 372px, 308px, '/src/v2_common/images/sprite.png', 'Customize', );
+$-ecosystem-name: 'Ecosystem';
+$-ecosystem-x: 56px;
+$-ecosystem-y: 140px;
+$-ecosystem-offset-x: -56px;
+$-ecosystem-offset-y: -140px;
+$-ecosystem-width: 56px;
+$-ecosystem-height: 56px;
+$-ecosystem-total-width: 372px;
+$-ecosystem-total-height: 308px;
+$-ecosystem-image: '/src/v2_common/images/sprite.png';
+$-ecosystem: (56px, 140px, -56px, -140px, 56px, 56px, 372px, 308px, '/src/v2_common/images/sprite.png', 'Ecosystem', );
+$-excel-document-name: 'ExcelDocument';
+$-excel-document-x: 260px;
+$-excel-document-y: 252px;
+$-excel-document-offset-x: -260px;
+$-excel-document-offset-y: -252px;
+$-excel-document-width: 36px;
+$-excel-document-height: 48px;
+$-excel-document-total-width: 372px;
+$-excel-document-total-height: 308px;
+$-excel-document-image: '/src/v2_common/images/sprite.png';
+$-excel-document: (260px, 252px, -260px, -252px, 36px, 48px, 372px, 308px, '/src/v2_common/images/sprite.png', 'ExcelDocument', );
+$-features-name: 'Features';
+$-features-x: 112px;
+$-features-y: 140px;
+$-features-offset-x: -112px;
+$-features-offset-y: -140px;
+$-features-width: 56px;
+$-features-height: 56px;
+$-features-total-width: 372px;
+$-features-total-height: 308px;
+$-features-image: '/src/v2_common/images/sprite.png';
+$-features: (112px, 140px, -112px, -140px, 56px, 56px, 372px, 308px, '/src/v2_common/images/sprite.png', 'Features', );
+$-find-solution-name: 'FindSolution';
+$-find-solution-x: 168px;
+$-find-solution-y: 140px;
+$-find-solution-offset-x: -168px;
+$-find-solution-offset-y: -140px;
+$-find-solution-width: 56px;
+$-find-solution-height: 56px;
+$-find-solution-total-width: 372px;
+$-find-solution-total-height: 308px;
+$-find-solution-image: '/src/v2_common/images/sprite.png';
+$-find-solution: (168px, 140px, -168px, -140px, 56px, 56px, 372px, 308px, '/src/v2_common/images/sprite.png', 'FindSolution', );
+$-grow-name: 'Grow';
+$-grow-x: 224px;
+$-grow-y: 0px;
+$-grow-offset-x: -224px;
+$-grow-offset-y: 0px;
+$-grow-width: 56px;
+$-grow-height: 56px;
+$-grow-total-width: 372px;
+$-grow-total-height: 308px;
+$-grow-image: '/src/v2_common/images/sprite.png';
+$-grow: (224px, 0px, -224px, 0px, 56px, 56px, 372px, 308px, '/src/v2_common/images/sprite.png', 'Grow', );
+$-installation-name: 'Installation';
+$-installation-x: 224px;
+$-installation-y: 56px;
+$-installation-offset-x: -224px;
+$-installation-offset-y: -56px;
+$-installation-width: 56px;
+$-installation-height: 56px;
+$-installation-total-width: 372px;
+$-installation-total-height: 308px;
+$-installation-image: '/src/v2_common/images/sprite.png';
+$-installation: (224px, 56px, -224px, -56px, 56px, 56px, 372px, 308px, '/src/v2_common/images/sprite.png', 'Installation', );
+$-integration-name: 'Integration';
+$-integration-x: 224px;
+$-integration-y: 112px;
+$-integration-offset-x: -224px;
+$-integration-offset-y: -112px;
+$-integration-width: 56px;
+$-integration-height: 56px;
+$-integration-total-width: 372px;
+$-integration-total-height: 308px;
+$-integration-image: '/src/v2_common/images/sprite.png';
+$-integration: (224px, 112px, -224px, -112px, 56px, 56px, 372px, 308px, '/src/v2_common/images/sprite.png', 'Integration', );
+$-maintenance-name: 'Maintenance';
+$-maintenance-x: 0px;
+$-maintenance-y: 196px;
+$-maintenance-offset-x: 0px;
+$-maintenance-offset-y: -196px;
+$-maintenance-width: 56px;
+$-maintenance-height: 56px;
+$-maintenance-total-width: 372px;
+$-maintenance-total-height: 308px;
+$-maintenance-image: '/src/v2_common/images/sprite.png';
+$-maintenance: (0px, 196px, 0px, -196px, 56px, 56px, 372px, 308px, '/src/v2_common/images/sprite.png', 'Maintenance', );
+$-microservices-accelerator-name: 'MicroservicesAccelerator';
+$-microservices-accelerator-x: 56px;
+$-microservices-accelerator-y: 196px;
+$-microservices-accelerator-offset-x: -56px;
+$-microservices-accelerator-offset-y: -196px;
+$-microservices-accelerator-width: 56px;
+$-microservices-accelerator-height: 56px;
+$-microservices-accelerator-total-width: 372px;
+$-microservices-accelerator-total-height: 308px;
+$-microservices-accelerator-image: '/src/v2_common/images/sprite.png';
+$-microservices-accelerator: (56px, 196px, -56px, -196px, 56px, 56px, 372px, 308px, '/src/v2_common/images/sprite.png', 'MicroservicesAccelerator', );
+$-monitoring-and-analytics-name: 'MonitoringAndAnalytics';
+$-monitoring-and-analytics-x: 112px;
+$-monitoring-and-analytics-y: 196px;
+$-monitoring-and-analytics-offset-x: -112px;
+$-monitoring-and-analytics-offset-y: -196px;
+$-monitoring-and-analytics-width: 56px;
+$-monitoring-and-analytics-height: 56px;
+$-monitoring-and-analytics-total-width: 372px;
+$-monitoring-and-analytics-total-height: 308px;
+$-monitoring-and-analytics-image: '/src/v2_common/images/sprite.png';
+$-monitoring-and-analytics: (112px, 196px, -112px, -196px, 56px, 56px, 372px, 308px, '/src/v2_common/images/sprite.png', 'MonitoringAndAnalytics', );
+$-new-feature-name: 'NewFeature';
+$-new-feature-x: 168px;
+$-new-feature-y: 196px;
+$-new-feature-offset-x: -168px;
+$-new-feature-offset-y: -196px;
+$-new-feature-width: 56px;
+$-new-feature-height: 56px;
+$-new-feature-total-width: 372px;
+$-new-feature-total-height: 308px;
+$-new-feature-image: '/src/v2_common/images/sprite.png';
+$-new-feature: (168px, 196px, -168px, -196px, 56px, 56px, 372px, 308px, '/src/v2_common/images/sprite.png', 'NewFeature', );
+$-noun1-name: 'Noun1';
+$-noun1-x: 224px;
+$-noun1-y: 196px;
+$-noun1-offset-x: -224px;
+$-noun1-offset-y: -196px;
+$-noun1-width: 56px;
+$-noun1-height: 56px;
+$-noun1-total-width: 372px;
+$-noun1-total-height: 308px;
+$-noun1-image: '/src/v2_common/images/sprite.png';
+$-noun1: (224px, 196px, -224px, -196px, 56px, 56px, 372px, 308px, '/src/v2_common/images/sprite.png', 'Noun1', );
+$-noun2-name: 'Noun2';
+$-noun2-x: 280px;
+$-noun2-y: 0px;
+$-noun2-offset-x: -280px;
+$-noun2-offset-y: 0px;
+$-noun2-width: 56px;
+$-noun2-height: 56px;
+$-noun2-total-width: 372px;
+$-noun2-total-height: 308px;
+$-noun2-image: '/src/v2_common/images/sprite.png';
+$-noun2: (280px, 0px, -280px, 0px, 56px, 56px, 372px, 308px, '/src/v2_common/images/sprite.png', 'Noun2', );
+$-noun3-name: 'Noun3';
+$-noun3-x: 280px;
+$-noun3-y: 56px;
+$-noun3-offset-x: -280px;
+$-noun3-offset-y: -56px;
+$-noun3-width: 56px;
+$-noun3-height: 56px;
+$-noun3-total-width: 372px;
+$-noun3-total-height: 308px;
+$-noun3-image: '/src/v2_common/images/sprite.png';
+$-noun3: (280px, 56px, -280px, -56px, 56px, 56px, 372px, 308px, '/src/v2_common/images/sprite.png', 'Noun3', );
+$-noun4-name: 'Noun4';
+$-noun4-x: 280px;
+$-noun4-y: 112px;
+$-noun4-offset-x: -280px;
+$-noun4-offset-y: -112px;
+$-noun4-width: 56px;
+$-noun4-height: 56px;
+$-noun4-total-width: 372px;
+$-noun4-total-height: 308px;
+$-noun4-image: '/src/v2_common/images/sprite.png';
+$-noun4: (280px, 112px, -280px, -112px, 56px, 56px, 372px, 308px, '/src/v2_common/images/sprite.png', 'Noun4', );
+$-open-source-name: 'OpenSource';
+$-open-source-x: 280px;
+$-open-source-y: 168px;
+$-open-source-offset-x: -280px;
+$-open-source-offset-y: -168px;
+$-open-source-width: 56px;
+$-open-source-height: 56px;
+$-open-source-total-width: 372px;
+$-open-source-total-height: 308px;
+$-open-source-image: '/src/v2_common/images/sprite.png';
+$-open-source: (280px, 168px, -280px, -168px, 56px, 56px, 372px, 308px, '/src/v2_common/images/sprite.png', 'OpenSource', );
+$-pdf-document-name: 'PdfDocument';
+$-pdf-document-x: 296px;
+$-pdf-document-y: 252px;
+$-pdf-document-offset-x: -296px;
+$-pdf-document-offset-y: -252px;
+$-pdf-document-width: 36px;
+$-pdf-document-height: 48px;
+$-pdf-document-total-width: 372px;
+$-pdf-document-total-height: 308px;
+$-pdf-document-image: '/src/v2_common/images/sprite.png';
+$-pdf-document: (296px, 252px, -296px, -252px, 36px, 48px, 372px, 308px, '/src/v2_common/images/sprite.png', 'PdfDocument', );
+$-perpetual-licence-name: 'PerpetualLicence';
+$-perpetual-licence-x: 0px;
+$-perpetual-licence-y: 252px;
+$-perpetual-licence-offset-x: 0px;
+$-perpetual-licence-offset-y: -252px;
+$-perpetual-licence-width: 56px;
+$-perpetual-licence-height: 56px;
+$-perpetual-licence-total-width: 372px;
+$-perpetual-licence-total-height: 308px;
+$-perpetual-licence-image: '/src/v2_common/images/sprite.png';
+$-perpetual-licence: (0px, 252px, 0px, -252px, 56px, 56px, 372px, 308px, '/src/v2_common/images/sprite.png', 'PerpetualLicence', );
+$-power-point-presentation-name: 'PowerPointPresentation';
+$-power-point-presentation-x: 336px;
+$-power-point-presentation-y: 0px;
+$-power-point-presentation-offset-x: -336px;
+$-power-point-presentation-offset-y: 0px;
+$-power-point-presentation-width: 36px;
+$-power-point-presentation-height: 48px;
+$-power-point-presentation-total-width: 372px;
+$-power-point-presentation-total-height: 308px;
+$-power-point-presentation-image: '/src/v2_common/images/sprite.png';
+$-power-point-presentation: (336px, 0px, -336px, 0px, 36px, 48px, 372px, 308px, '/src/v2_common/images/sprite.png', 'PowerPointPresentation', );
+$-project-quick-start-name: 'ProjectQuickStart';
+$-project-quick-start-x: 56px;
+$-project-quick-start-y: 252px;
+$-project-quick-start-offset-x: -56px;
+$-project-quick-start-offset-y: -252px;
+$-project-quick-start-width: 56px;
+$-project-quick-start-height: 56px;
+$-project-quick-start-total-width: 372px;
+$-project-quick-start-total-height: 308px;
+$-project-quick-start-image: '/src/v2_common/images/sprite.png';
+$-project-quick-start: (56px, 252px, -56px, -252px, 56px, 56px, 372px, 308px, '/src/v2_common/images/sprite.png', 'ProjectQuickStart', );
+$-solution-free-name: 'SolutionFree';
+$-solution-free-x: 0px;
+$-solution-free-y: 0px;
+$-solution-free-offset-x: 0px;
+$-solution-free-offset-y: 0px;
+$-solution-free-width: 84px;
+$-solution-free-height: 84px;
+$-solution-free-total-width: 372px;
+$-solution-free-total-height: 308px;
+$-solution-free-image: '/src/v2_common/images/sprite.png';
+$-solution-free: (0px, 0px, 0px, 0px, 84px, 84px, 372px, 308px, '/src/v2_common/images/sprite.png', 'SolutionFree', );
+$-solution-trial-name: 'SolutionTrial';
+$-solution-trial-x: 84px;
+$-solution-trial-y: 0px;
+$-solution-trial-offset-x: -84px;
+$-solution-trial-offset-y: 0px;
+$-solution-trial-width: 84px;
+$-solution-trial-height: 84px;
+$-solution-trial-total-width: 372px;
+$-solution-trial-total-height: 308px;
+$-solution-trial-image: '/src/v2_common/images/sprite.png';
+$-solution-trial: (84px, 0px, -84px, 0px, 84px, 84px, 372px, 308px, '/src/v2_common/images/sprite.png', 'SolutionTrial', );
+$-support-name: 'Support';
+$-support-x: 112px;
+$-support-y: 252px;
+$-support-offset-x: -112px;
+$-support-offset-y: -252px;
+$-support-width: 56px;
+$-support-height: 56px;
+$-support-total-width: 372px;
+$-support-total-height: 308px;
+$-support-image: '/src/v2_common/images/sprite.png';
+$-support: (112px, 252px, -112px, -252px, 56px, 56px, 372px, 308px, '/src/v2_common/images/sprite.png', 'Support', );
+$-text-document-name: 'TextDocument';
+$-text-document-x: 336px;
+$-text-document-y: 48px;
+$-text-document-offset-x: -336px;
+$-text-document-offset-y: -48px;
+$-text-document-width: 36px;
+$-text-document-height: 48px;
+$-text-document-total-width: 372px;
+$-text-document-total-height: 308px;
+$-text-document-image: '/src/v2_common/images/sprite.png';
+$-text-document: (336px, 48px, -336px, -48px, 36px, 48px, 372px, 308px, '/src/v2_common/images/sprite.png', 'TextDocument', );
+$-trial-name: 'Trial';
+$-trial-x: 168px;
+$-trial-y: 252px;
+$-trial-offset-x: -168px;
+$-trial-offset-y: -252px;
+$-trial-width: 56px;
+$-trial-height: 56px;
+$-trial-total-width: 372px;
+$-trial-total-height: 308px;
+$-trial-image: '/src/v2_common/images/sprite.png';
+$-trial: (168px, 252px, -168px, -252px, 56px, 56px, 372px, 308px, '/src/v2_common/images/sprite.png', 'Trial', );
+$-word-document-name: 'WordDocument';
+$-word-document-x: 336px;
+$-word-document-y: 96px;
+$-word-document-offset-x: -336px;
+$-word-document-offset-y: -96px;
+$-word-document-width: 36px;
+$-word-document-height: 48px;
+$-word-document-total-width: 372px;
+$-word-document-total-height: 308px;
+$-word-document-image: '/src/v2_common/images/sprite.png';
+$-word-document: (336px, 96px, -336px, -96px, 36px, 48px, 372px, 308px, '/src/v2_common/images/sprite.png', 'WordDocument', );
+$spritesheet-width: 372px;
+$spritesheet-height: 308px;
+$spritesheet-image: '/src/v2_common/images/sprite.png';
+$spritesheet-sprites: ($-annual-subscription, $-archive, $-audit, $-cd-pipelines, $-containerized-infrastructure, $-costs-control, $-customize, $-ecosystem, $-excel-document, $-features, $-find-solution, $-grow, $-installation, $-integration, $-maintenance, $-microservices-accelerator, $-monitoring-and-analytics, $-new-feature, $-noun1, $-noun2, $-noun3, $-noun4, $-open-source, $-pdf-document, $-perpetual-licence, $-power-point-presentation, $-project-quick-start, $-solution-free, $-solution-trial, $-support, $-text-document, $-trial, $-word-document, );
+$spritesheet: (372px, 308px, '/src/v2_common/images/sprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

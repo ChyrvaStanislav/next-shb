@@ -1,0 +1,233 @@
+@import "variables";
+
+.mainContainer {
+  box-sizing: border-box;
+  max-width: $desktop-max-width;
+  margin: 0 auto;
+  padding: 1.6rem 1.6rem 3.2rem;
+
+  @media (min-width: $bp-sm) {
+    padding: 1.6rem 1.6rem 4.8rem;
+  }
+
+  @media (min-width: $bp-md) {
+    padding: 1.6rem 2.4rem 4.8rem;
+  }
+
+  @media (min-width: $bp-lg) {
+    padding: 1.6rem 4rem 7.2rem;
+  }
+
+  @media (min-width: $bp-xl) {
+    padding: 1.6rem 4rem 9.2rem;
+  }
+
+  &.singleChild {
+    @media (min-width: $bp-lg) {
+      padding-bottom: 22.5rem;
+    }
+
+    @media (min-width: $bp-xl) {
+      padding-bottom: 28rem;
+    }
+  }
+}
+
+.wrapper {
+  flex-shrink: 0;
+}
+
+.categorySectionWithSticky {
+  display: none;
+
+  @media (min-width: $bp-lg) {
+    display: block;
+    padding-top: 2.8rem;
+    width: 22rem;
+    margin-right: 1.6rem;
+    position: sticky;
+    top: 4rem;
+  }
+
+  @media (min-width: $bp-xl) {
+    width: 22.4rem;
+    margin-right: 2.4rem;
+    padding-top: 3.2rem;
+  }
+}
+
+.categorySection {
+  display: none;
+
+  @media (min-width: $bp-md) {
+    display: block;
+  }
+
+  @media (min-width: $bp-lg) {
+    display: none;
+  }
+}
+
+.contentContainer {
+  @media (min-width: $bp-lg) {
+    display: flex;
+  }
+}
+
+.postList {
+  width: 100%;
+
+  @media (min-width: $bp-lg) {
+    padding-top: 2.8rem;
+  }
+
+  @media (min-width: $bp-xl) {
+    padding-top: 3.2rem;
+  }
+
+  & > * {
+    margin-bottom: 3.2rem;
+
+    @media (min-width: $bp-md) {
+      margin-bottom: 4.8rem;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:nth-last-child(2) {
+      margin-bottom: 3.2rem;
+
+      @media (min-width: $bp-sm) {
+        margin-bottom: 2.4rem;
+      }
+
+      @media (min-width: $bp-md) {
+        margin-bottom: 3.2rem;
+      }
+
+      @media (min-width: $bp-lg) {
+        margin-bottom: 6.4rem;
+      }
+    }
+  }
+
+  .moreBtnContainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .btnPosition {
+    width: 100%;
+
+    @media (min-width: $bp-md) {
+      width: initial;
+    }
+  }
+}
+
+.breadcrumbsMobile {
+
+
+  @media (min-width: $bp-lg) {
+    display: none;
+  }
+}
+
+.breadcrumbs {
+  margin-bottom: 2.4rem;
+
+  @media (min-width: $bp-md) {
+    margin-bottom: 2.4rem;
+  }
+
+  @media (min-width: $bp-lg) {
+    margin-bottom: 0.4rem;
+  }
+
+  @media (min-width: $bp-xl) {
+    margin-bottom: 0;
+  }
+}
+
+.filterButton {
+  margin-bottom: 2.4rem;
+
+  @media (min-width: $bp-md) {
+    display: none;
+  }
+
+  .title {
+    color: $color-secondary;
+    margin-bottom: .8rem;
+  }
+}
+
+.blogBanner {
+  background-color: $color-dark-black;
+
+  .blogHeroHeader {
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    margin: 0;
+    margin-bottom: 0.8rem;
+    max-width: 25.6rem;
+
+    @media (min-width: $bp-md) {
+      font-size: 3.2rem;
+      line-height: 4rem;
+      max-width: 40rem;
+    }
+
+    @media (min-width: $bp-lg) {
+      font-size: 4.8rem;
+      line-height: 5.6rem;
+      max-width: 58.2rem;
+      margin-bottom: 1.2rem;
+    }
+  }
+
+  .textCarousel {
+    top: 0;
+    padding: 2rem 0 2.4rem;
+
+    @media (min-width: $bp-md) {
+      padding-top: 3.2rem;
+      padding-bottom: 3.6rem;
+    }
+
+    @media (min-width: $bp-lg) {
+      padding-top: 4.8rem;
+      padding-bottom: 5.2rem;
+    }
+  }
+
+  .imageCarousel {
+    img, picture {
+      height: 10.8rem;
+
+      @media (min-width: $bp-md) {
+        height: 14.8rem;
+      }
+      @media (min-width: $bp-lg) {
+        height: 21.2rem;
+      }
+    }
+  }
+}
+
+.preloaderContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  row-gap: 3.2rem;
+
+  @media (min-width: $bp-md) {
+    row-gap: 4.8rem;
+  }
+
+  @media (min-width: $bp-lg) {
+    row-gap: 3.2rem;
+  }
+}

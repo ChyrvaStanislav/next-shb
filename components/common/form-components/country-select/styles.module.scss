@@ -1,0 +1,134 @@
+@import "~v2_common/styles/variables";
+
+:global {
+  .countrySelectContainer {
+    .css-26l3qy-menu {
+      width: 220%;
+    }
+  }
+
+  .react-select__control {
+    .react-select__value-container {
+      padding-right: 0;
+    }
+
+    .countrySelelctSelected {
+      .countrySelelctSelectedLeftPartContainer {
+        display: none;
+      }
+
+      .countrySelelctCallingCodes {
+        color: $color-black;
+        line-height: 2rem;
+      }
+    }
+
+    &.styled__control-is-focused:hover {
+      border-color: red;
+    }
+  }
+}
+
+.mainContainer {
+  display: flex;
+  align-items: center;
+
+  .input {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 100%;
+    margin-left: 0.8rem;
+    padding: 0.8rem 1.2rem;
+    border: 1px solid $color-black-a25;
+    border-radius: 0.4rem;
+    background-color: $color-white;
+    color: $color-black;
+    font-family: $Source_Sans_Pro_Regular;
+    font-size: 1.6rem;
+    line-height: 2rem;
+
+    &::placeholder {
+      color: $color-black-a25;
+    }
+
+    &:hover {
+      @media (hover: hover) {
+        border-color: $color-black-a45;
+      }
+    }
+
+    &:focus {
+      border-color: $color-primary-accent;
+    }
+  }
+
+  .codeInput {
+    margin: 0;
+  }
+
+}
+
+.selectContainer {
+  width: 12rem;
+  flex-shrink: 0;
+}
+
+.optionsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .leftPartContainer {
+    display: flex;
+    align-items: center;
+  }
+
+  .imgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-right: 0.8rem;
+
+    .img {
+      max-height: 2.4rem;
+      max-width: 2.4rem;
+    }
+  }
+
+  .title {
+      margin: 0;
+      color: $color-black;
+      font-family: $Source_Sans_Pro_Regular;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+  }
+
+  .callingCodes {
+    color: $color-black-a65;
+    font-family: $Source_Sans_Pro_Regular;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+}
+
+.error {
+  margin-bottom: 0.8rem;
+
+  .numberInput {
+    padding-right: 3.2rem;
+    border-color: $color-negative !important;
+  }
+
+  &::after {
+    content: '\0021';
+    display: inline-block;
+    position: absolute;
+    right: 1.7rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: $color-negative;
+    font-size: 2rem;
+  }
+}

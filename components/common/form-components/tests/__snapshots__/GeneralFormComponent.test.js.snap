@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GeneralFormComponent renders should GeneralFormComponent renders 1`] = `
+<DocumentFragment>
+  <div>
+    <section
+      class="componentContainer"
+      data-testid="section"
+    >
+      <div
+        class="slider open"
+      >
+        <h1>
+          Some children
+        </h1>
+        <button
+          type="button"
+        >
+          setFormSent
+        </button>
+      </div>
+    </section>
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,54 @@
+@import "/styles/variables";
+
+.textareaContainer {
+    margin-bottom: 1.6rem;
+    position: relative;
+
+  .label {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 0.4rem;
+    font-family: $Source_Sans_Pro_Regular;
+
+    &.required {
+      padding-left: 1rem;
+
+      &::before {
+        content: '*';
+        position: absolute;
+        left: 0;
+        top: -0.2rem;
+        color: $color-negative;
+        font-size: 1.8rem;
+        letter-spacing: 0;
+        line-height: 2.4rem;
+      }
+    }
+  }
+
+}
+
+.emailError {
+  @media (max-width: #{$bp-sm - 1}) {
+    display: inline-block;
+    max-width: 235px;
+  }
+}
+
+@keyframes error-show-delay {
+  from {
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.animatedError {
+  animation: error-show-delay .05s linear;
+}

@@ -1,0 +1,212 @@
+@import "/styles/variables";
+
+.SuccessScreen {
+  display: flex;
+  min-height: inherit;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $bp-md) {
+    width: 52.8rem;
+  }
+
+  @media (min-width: $bp-lg) {
+    width: 55.2rem;
+  }
+
+  .SuccessScreenContainer,
+  .SuccessInventoryContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .SuccessScreenContainer {
+    padding: 4.5rem 1.6rem 0;
+
+    @media (min-width: $breakpoint-sm) {
+      width: 44rem;
+    }
+
+    @media (min-width: $breakpoint-md) {
+      width: 100%;
+    }
+
+    .SuccessScreenIcon {
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 4rem;
+      width: 6.4rem;
+      height: 6.4rem;
+      background-color: $color-positive;
+      border: 0.1rem solid $color-positive;
+      border-radius: 50%;
+
+      &::before {
+        content: '';
+        display: block;
+        transform: translateX(-0.2rem);
+        background: url("/src/v2_common/images/checked.svg") no-repeat center;
+        background-size: 3.3rem;
+        width: 2.9rem;
+        height: 2.1rem;
+      }
+
+      @media (min-width: $bp-lg) {
+        margin-bottom: 3.6rem;
+      }
+    }
+
+    .SuccessScreenTitle {
+      text-align: center;
+      margin-bottom: 1.6rem;
+      color: $color-black;
+      font-family: $Museo_Sans_Bold;
+      font-size: 2.2rem;
+      line-height: 2.8rem;
+
+      @media (min-width: $bp-lg) {
+        font-size: 2.6rem;
+        line-height: 3.6rem;
+        max-width: 34.8rem;
+        margin-bottom: 2.4rem;
+      }
+
+    }
+
+    .SuccessScreenTitleLong {
+      max-width: 100%;
+    }
+
+    .SuccessScreenText {
+      color: $color-black;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      text-align: center;
+
+      @media (min-width: $breakpoint-md) {
+        max-width: 35.7rem;
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+      }
+    }
+
+    .SuccessScreenText:last-of-type {
+      margin-bottom: 4rem;
+    }
+
+    .SuccessScreenBtn,
+    .SuccessScreenLink {
+      margin-bottom: 1.6rem;
+      width: 100%;
+
+      @media (min-width: $bp-sm) {
+        display: inline-block;
+        box-sizing: border-box;
+        width: 28.8rem;
+      }
+
+      @media (min-width: $bp-md) {
+        width: auto;
+      }
+
+
+    }
+
+    .SuccessScreenLink {
+      margin-bottom: 0;
+    }
+
+    .SuccessScreenLink {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.cross {
+  position: absolute;
+  top: 1.8rem;
+  right: 2.4rem;
+  width: 1.4rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  fill: $color-secondary;
+}
+
+.breakingLine {
+  white-space: pre-line;
+}
+
+.SuccessScreen.solution {
+  min-height: 50.2rem;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  padding: 5.6rem 1.2rem 8.8rem;
+  border-radius: 0.4rem;
+  background: $color-bg-primary;
+  margin-bottom: 2rem;
+
+  @media (min-width: $bp-sm) {
+    min-height: initial;
+    padding-top: 13.2rem;
+    padding-bottom: 20rem;
+  }
+
+  @media (min-width: $bp-md) {
+    width: 100%;
+    min-height: 47.2rem;
+    padding-top: 5.6rem;
+    padding-bottom: 8.8rem;
+    max-width: 43.6rem;
+  }
+
+  @media (min-width: $bp-lg) {
+    max-width: 59.5rem;
+  }
+
+  @media (min-width: $bp-xl) {
+    max-width: 75.6rem;
+  }
+
+  .SuccessScreenContainer {
+    padding: 0;
+    max-width: 37.9rem;
+
+    @media (min-width: $bp-lg) {
+      max-width: none;
+    }
+
+    .SuccessScreenIcon {
+      margin-bottom: 2.4rem;
+    }
+
+    .SuccessScreenTitle,
+    .SuccessScreenText {
+      width: auto;
+      max-width: none;
+    }
+
+    .SuccessScreenTitle {
+      margin-bottom: 0.4rem;
+      font-size: 1.8rem;
+      line-height: 2.8rem;
+
+      @media (min-width: $bp-md) {
+        margin-bottom: 1.2rem;
+      }
+
+      @media (min-width: $bp-lg) {
+        font-size: 2.2rem;
+      }
+    }
+
+    .SuccessScreenText {
+      margin-bottom: 0;
+    }
+  }
+
+}

@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CategoryLink snapshots should NOT active CategoryLink match snapshot 1`] = `
+<DocumentFragment>
+  <a
+    class="p_links some-styles link2 topicAnalytics"
+    data-testid="category-link"
+    href="/blog?category=analytics"
+    other=""
+  >
+    Analytics
+  </a>
+</DocumentFragment>
+`;
+
+exports[`CategoryLink snapshots should active CategoryLink match snapshot 1`] = `
+<DocumentFragment>
+  <p
+    class="p_links some-styles link2 topicAnalytics"
+    other=""
+  >
+    Analytics
+  </p>
+</DocumentFragment>
+`;

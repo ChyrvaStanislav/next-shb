@@ -1,0 +1,102 @@
+//Breakpoints
+$breakpoint-lg: 1344px !default;
+$desktop-max-width: 1344px;
+$breakpoint-md: 769px !default;
+$breakpoint-sm: 480px !default;
+$parallax-disable: 1100px;
+$breakpoint-short-menu: 1065px;
+$breakpoint-small-tablet: 641px;
+
+//NEW Breakpoints
+$bp-sm: 568px;
+$bp-md: 768px;
+$bp-lg: 1024px;
+$bp-pre-xl: 1215px;
+$bp-xl: 1344px;
+
+//Fonts
+$Source_Sans_Pro_Regular: 'Source Sans Pro Regular', arial, sans-serif;
+$Source_Sans_Pro_Light: 'Source Sans Pro Light', arial, sans-serif;
+$Source_Sans_Pro_Bold: 'Source Sans Pro Bold', arial, sans-serif;
+$Source_Sans_Pro_Semibold: 'Source Sans Pro Semibold', arial, sans-serif;
+$Source_Sans_Pro_Italic: 'Source Sans Pro Italic', arial, sans-serif;
+$Museo_Sans_Regular: 'Museo Sans Regular', arial, sans-serif;
+$Museo_Sans_Light: 'Museo Sans Light', arial, sans-serif;
+$Museo_Sans_Bold: 'Museo Sans Bold', arial, sans-serif;
+$Museo_Sans_Semibold: 'Museo Sans Semibold', arial, sans-serif;
+$Museo_Sans_Italic: 'Museo Sans Italic', arial, sans-serif;
+$Museo_Sans_Black: 'Museo Sans Black', arial, sans-serif;
+$Source_Code_Pro_Regular: 'Source Code Pro Regular', arial, sans-serif;
+$Helvetica_Neue_Medium: 'Helvetica Neue Medium', arial, sans-serif;
+
+////Primary colors
+$color-primary-accent: #29B094;
+$color-primary-accent-pressed: #217260;
+$color-primary-hover: #3DD1B0;
+$color-primary-accent2: #3DD1B0;
+$color-primary-hover2: #29B094;
+$color-white: #FFF;
+$color-black: #202025;
+$color-dark-black: #000;
+$color-night-blue: #2B3566;
+$color-black-secondary: #222;
+
+////Secondary colors
+$color-secondary-accent: #0224B3;
+$color-secondary-accent-hover: #1F49FC;
+$color-secondary-graphic-03: #673FEF;
+$color-secondary-graphic-02: #F18E3B;
+$color-secondary-graphic-01: #EC563D;
+$color-secondary-graphic-03-a30: fade-out($color-secondary-graphic-03,.7);
+$color-secondary-graphic-02-a30: fade-out($color-secondary-graphic-02,.7);
+$color-secondary-graphic-01-a30: fade-out($color-secondary-graphic-01,.7);
+
+////Background colors
+$color-bg-primary: #F5F7FA;
+$color-bg-darkblue-01: #313B71;
+$color-bg-darkblue-02: #1A255A;
+$color-bg-darkblue-03: #0A0A48;
+$color-bg-darkblue-04: #0B0C49;
+$color-bg-lightblue: #DAEAFD;
+$color-bg-lightgreen: #E0F4F0;
+$color-bg-darkbrown: #494950;
+$color-bg-dark-white: #DFE1E6;
+$color-bg-grey: #F2F3F7;
+
+////Blacks
+$color-secondary-overlay: fade-out($color-black,.35);
+$color-secondary: fade-out($color-black,.55);
+$color-secondary-disabled: fade-out($color-black,.75);
+$color-secondary-disabled-pagination: #C0C2C4;
+$color-preloaders-light: #F2F3F7;
+$color-preloaders: #E7E9ED;
+$color-tertiary-buttons: #E7E9ED;
+$color-tertiary-hover: fade-out($color-black,.85);
+
+//SHADOW
+$color-shadow-banner-solution: rgb(45 85 142 / 4%);
+$color-shadow-hint-card: rgb(0 0 0 / 17%);
+$color-shadow-for-slider-footer: rgb(32 32 37 / 16%);
+$color-shadow-for-solution-logo: rgb(32 32 37 / 10%);
+
+////Alert colors
+$color-negative: #C64552;
+$color-positive: #8EC622;
+$color-positive-a30: fade-out($color-positive,.7);
+$color-positive-text: #6E991A;
+
+////Whites
+$color-white-a65: fade-out($color-white,.35);
+$color-white-a55: fade-out($color-white,.45);
+$color-white-a45: fade-out($color-white,.55);
+$color-white-a35: fade-out($color-white,.65);
+$color-white-a25: fade-out($color-white,.75);
+$color-white-a15: fade-out($color-white,.85);
+$color-white-a08: fade-out($color-white,.92);
+$color-black-a08: fade-out($color-black,.92);
+$color-black-a15: fade-out($color-black,.85);
+$color-black-a10: fade-out($color-black,.90);
+$color-black-a25: fade-out($color-black,.75);
+$color-black-a45: fade-out($color-black,.55);
+$color-black-a65: fade-out($color-black,.35);
+$color-black-a85: fade-out($color-black,.15);

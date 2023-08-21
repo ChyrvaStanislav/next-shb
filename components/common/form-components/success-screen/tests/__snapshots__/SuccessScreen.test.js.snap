@@ -1,0 +1,150 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SuccessScreen renders should SuccessScreen renders 1`] = `
+<DocumentFragment>
+  <div
+    class="SuccessScreen default"
+  >
+    <svg
+      class="cross"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="M2.293 2.293a1 1 0 011.414 0L8 6.585l4.293-4.292a1 1 0 011.414 1.414L9.415 8l4.292 4.293a1 1 0 01.083 1.32l-.083.094a1 1 0 01-1.414 0L8 9.415l-4.293 4.292a1 1 0 11-1.414-1.414L6.585 8 2.293 3.707a1 1 0 01-.083-1.32z"
+        data-fill="true"
+        fill-rule="nonzero"
+      />
+    </svg>
+    <div
+      class="SuccessScreenContainer"
+    >
+      <div
+        class="SuccessScreenIcon"
+      />
+      <h1
+        class="SuccessScreenTitle breakingLine successScreenClassGA"
+      >
+        Some Title
+      </h1>
+      <p
+        class="SuccessScreenText"
+      >
+        Some Description 1
+      </p>
+      <p
+        class="SuccessScreenText"
+      >
+        Some Description 2
+      </p>
+      <button
+        class="button primary medium SuccessScreenBtn"
+        type="submit"
+      >
+        Continue Exploring
+      </button>
+      <a
+        class="button outline medium SuccessScreenLink"
+        href="/search?sort=most-popular"
+        type="submit"
+      >
+        Go to all solutions
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`SuccessScreen renders should SuccessScreen renders without button 1`] = `
+<DocumentFragment>
+  <div
+    class="SuccessScreen default"
+  >
+    <svg
+      class="cross"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="M2.293 2.293a1 1 0 011.414 0L8 6.585l4.293-4.292a1 1 0 011.414 1.414L9.415 8l4.292 4.293a1 1 0 01.083 1.32l-.083.094a1 1 0 01-1.414 0L8 9.415l-4.293 4.292a1 1 0 11-1.414-1.414L6.585 8 2.293 3.707a1 1 0 01-.083-1.32z"
+        data-fill="true"
+        fill-rule="nonzero"
+      />
+    </svg>
+    <div
+      class="SuccessScreenContainer"
+    >
+      <div
+        class="SuccessScreenIcon"
+      />
+      <h1
+        class="SuccessScreenTitle breakingLine successScreenClassGA"
+      >
+        Some Title
+      </h1>
+      <p
+        class="SuccessScreenText"
+      >
+        Some Description 1
+      </p>
+      <p
+        class="SuccessScreenText"
+      >
+        Some Description 2
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`SuccessScreen renders should setTimeout window.open works 1`] = `
+<DocumentFragment>
+  <div
+    class="SuccessScreen default"
+  >
+    <svg
+      class="cross"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="M2.293 2.293a1 1 0 011.414 0L8 6.585l4.293-4.292a1 1 0 011.414 1.414L9.415 8l4.292 4.293a1 1 0 01.083 1.32l-.083.094a1 1 0 01-1.414 0L8 9.415l-4.293 4.292a1 1 0 11-1.414-1.414L6.585 8 2.293 3.707a1 1 0 01-.083-1.32z"
+        data-fill="true"
+        fill-rule="nonzero"
+      />
+    </svg>
+    <div
+      class="SuccessScreenContainer"
+    >
+      <div
+        class="SuccessScreenIcon"
+      />
+      <h1
+        class="SuccessScreenTitle breakingLine successScreenClassGA"
+      >
+        Some Title
+      </h1>
+      <p
+        class="SuccessScreenText"
+      >
+        Some Description 1
+      </p>
+      <p
+        class="SuccessScreenText"
+      >
+        Some Description 2
+      </p>
+      <button
+        class="button primary medium SuccessScreenBtn"
+        type="submit"
+      >
+        Continue Exploring
+      </button>
+      <a
+        class="button outline medium SuccessScreenLink"
+        href="/search?sort=most-popular"
+        type="submit"
+      >
+        Go to all solutions
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;

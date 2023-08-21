@@ -1,0 +1,205 @@
+@import "variables";
+
+.bgGrey {
+  background-color: $color-bg-primary;
+}
+
+.container {
+  @media (min-width: $bp-md) {
+    display: flex;
+    flex-direction: column;
+    max-width: 126rem;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 4.4rem 1.6rem 4rem;
+
+  @media (min-width: $bp-md) {
+    padding: 2rem 2.4rem 4rem;
+  }
+  @media (min-width: $bp-lg) {
+    padding: 6rem 4rem 5.2rem;
+  }
+
+  @media (min-width: $bp-xl) {
+    padding: 5.6rem 14.8rem;
+    max-width: $bp-xl;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+}
+
+.headerContainer {
+  margin: 0 auto 2.4rem;
+
+  @media (min-width: $bp-md) {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  @media (min-width: $bp-lg) {
+    margin-bottom: 2.8rem;
+  }
+
+  @media (min-width: $bp-xl) {
+    margin-bottom: 4rem;
+  }
+
+  .header {  
+    color: $color-black;
+    font-family: $Museo_Sans_Bold;
+  }
+}
+
+.headerContainerHome {
+  margin-right: 0;
+  margin-left: 0;
+  @media (min-width: $bp-md) {
+    text-align: left;
+  }
+}
+
+.headerContainerBlog {
+  margin-bottom: 3.2rem;
+}
+
+.contentContainer {
+  & > :nth-child(n) {
+    margin-bottom: 3.2rem;
+  }
+
+  & > :last-child {
+    margin-bottom: 2.8rem;
+  }
+
+  @media (min-width: $bp-sm) {
+    & > :nth-child(n) {
+      margin-bottom: 3.2rem;
+    }
+
+    & > :last-child {
+      margin-bottom: 3.2rem;
+    }
+  }
+
+  @media (min-width: $bp-md) {
+    display: flex;
+    justify-content: center;
+
+    & > :nth-child(n) {
+      display: block;
+      flex-basis: 50%;
+      margin-bottom: 0;
+    }
+
+    & > :first-child {
+      margin-right: 2.4rem;
+    }
+
+    & > :nth-child(n + 3) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $bp-lg) {
+    & > :nth-child(n) {
+      display: block;
+      flex-basis: 33.33%;
+      margin-right: 2rem;
+    }
+
+    & > :last-child {
+      margin-right: 0;
+    }
+  }
+
+  @media (min-width: $bp-xl) {
+    & > :nth-child(n) {
+      margin-right: 3.2rem;
+    }
+
+    & > :last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: center;
+  
+  @media (min-width: $bp-md) {
+    margin-top: 4rem;
+  }
+
+  @media (min-width: $bp-lg) {
+    margin-top: 4.8rem;
+  }
+}
+
+.btn {
+  width: 100%;
+
+  &:hover {
+    border: 0.1rem solid $color-primary-hover;
+    background-color: $color-primary-hover;
+  }
+
+  @media (min-width: $bp-sm) {
+    width: initial;
+    padding: .7rem 4rem;
+  }
+}
+
+.relatedSolutionMobileWrapper {
+  padding: 3.2rem 1.6rem 2.4rem;
+
+  @media (min-width: $bp-sm) {
+    padding: 2.4rem 1.6rem 4rem;
+  }
+}
+
+.relatedSolutionMobile {
+  .additionalPost {
+    &:hover {
+      box-shadow: none;
+    }
+  }
+}
+
+.contentContainer {
+  &.relatedSolutionMobile {
+    @media (min-width: $bp-md) {
+      justify-content: space-between;
+    }
+
+    & > :nth-child(n) {
+      margin-bottom: 3.8rem;
+      @media (min-width: $bp-sm) {
+        margin-bottom: 4rem;
+      }
+    }
+
+    & > :last-child {
+      margin-bottom: 0;
+    }
+
+    .mageContainer {
+      @media (min-width: $bp-md) {
+        order: 1;
+      }
+    }
+
+    .infoContainer {
+      @media (min-width: $bp-md) {
+        order: 0;
+      }
+    }
+  }
+}

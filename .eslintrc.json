@@ -1,0 +1,10 @@
+{
+  "extends": "next/core-web-vitals",
+"rules": {
+    "next/no-css-tags": "off",
+    "react/react-in-jsx-scope": "off",
+    "react-hooks/exhaustive-deps": "off",
+    "react/jsx-no-duplicate-props": "off",
+    "react/display-name": "off"
+  }
+}

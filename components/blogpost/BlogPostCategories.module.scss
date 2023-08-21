@@ -1,0 +1,150 @@
+@import "variables";
+
+.filterContainer {
+  flex-shrink: 0;
+
+  .title {
+    margin-bottom: .8rem;
+    color: $color-secondary;
+
+    @media (min-width: $bp-md) {
+      letter-spacing: .2rem;
+    }
+
+    @media (min-width: $bp-lg) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .categoryList {
+    display: none;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    @media (min-width: $bp-md) {
+      display: flex;
+    }
+    @media (min-width: $bp-lg) {
+      flex-direction: column;
+
+      //margin-right: 6.7rem;
+      margin-bottom: 0;
+    }
+
+    .categoryItem {
+      @media (min-width: $bp-md) {
+        margin-bottom: 1.6rem;
+        margin-right: 4rem;
+      }
+
+      @media (min-width: $bp-lg) {
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .filterLink {
+      @media (min-width: $bp-md) {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+      }
+    }
+  }
+
+  .filterLink {
+    color: $color-black-a65;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-black;
+    }
+
+    &.active {
+      color: $color-black;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -.5rem;
+        height: .3rem;
+        width: 100%;
+        background-color: $color-primary-accent;
+        border-radius: .2rem;
+
+        @media (min-width: $bp-lg) {
+          width: .3rem;
+          height: 100%;
+          left: -1.1rem;
+          top: 0;
+        }
+      }
+    }
+  }
+
+  .mobileCategoryContainer {
+    display: flex;
+    margin-bottom: 4.4rem;
+    @media (min-width: $breakpoint-sm) {
+      display: none;
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .firstColumn {
+      margin-right: 4.5rem;
+    }
+  }
+}
+
+.remoteLink {
+  display: inline-block;
+  font-family: $Source_Sans_Pro_Semibold;
+  padding-right: 2rem;
+  position: relative;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: $color-secondary-accent;
+  text-decoration: none;
+  transition: color 0.3s linear;
+  max-width: 12.4rem;
+  @media (min-width: $bp-sm) {
+    max-width: inherit;
+    margin-right: 3.2rem;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+  @media (min-width: $bp-xl) {
+    padding-right: 2.8rem;
+  }
+
+  &:hover {
+    color: $color-secondary-accent-hover;
+    @media (min-width: $bp-xl) {
+      &::after {
+        display: block;
+      }
+    }
+  }
+
+  &::after {
+    background: url("/src/v2_common/images/remote.png") no-repeat;
+    content: '';
+    width: 1.6rem;
+    height: 1.6rem;
+    position: absolute;
+    top: 0.5rem;
+    right: 0;
+    @media (min-width: $bp-sm) {
+      top: 0.6rem;
+    }
+    @media (min-width: $bp-xl) {
+      display: none;
+    }
+  }
+}

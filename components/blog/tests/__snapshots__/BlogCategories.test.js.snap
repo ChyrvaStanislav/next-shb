@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BlogCategories snapshots should BlogCategories match snapshot with ALL active link 1`] = `
+<DocumentFragment>
+  <aside
+    class="filterContainer"
+  >
+    <p
+      class="h5 title"
+      other=""
+    >
+      Topics
+    </p>
+    <ul
+      class="categoryList"
+    >
+      <li
+        class="categoryItem"
+      >
+        <p
+          class="p_links filterLink active"
+          other=""
+        >
+          All Posts
+        </p>
+      </li>
+      <li
+        class="categoryItem"
+      >
+        <a
+          class="p_links filterLink link2 topicAnalytics"
+          data-testid="category-link"
+          href="/blog?category=analytics"
+          other=""
+        >
+          Analytics
+        </a>
+      </li>
+      <li
+        class="categoryItem"
+      >
+        <a
+          class="p_links filterLink link2 topicCloud&DevOps"
+          data-testid="category-link"
+          href="/blog?category=cloud_devops"
+          other=""
+        >
+          Cloud & DevOps
+        </a>
+      </li>
+    </ul>
+  </aside>
+</DocumentFragment>
+`;
+
+exports[`BlogCategories snapshots should BlogCategories match snapshot with ONE active link 1`] = `
+<DocumentFragment>
+  <aside
+    class="filterContainer"
+  >
+    <p
+      class="h5 title"
+      other=""
+    >
+      Topics
+    </p>
+    <ul
+      class="categoryList"
+    >
+      <li
+        class="categoryItem"
+      >
+        <a
+          class="p_links filterLink"
+          href="/blog"
+          other=""
+        >
+          All Posts
+        </a>
+      </li>
+      <li
+        class="categoryItem"
+      >
+        <p
+          class="p_links filterLink active link2 topicAnalytics"
+          other=""
+        >
+          Analytics
+        </p>
+      </li>
+      <li
+        class="categoryItem"
+      >
+        <a
+          class="p_links filterLink link2 topicCloud&DevOps"
+          data-testid="category-link"
+          href="/blog?category=cloud_devops"
+          other=""
+        >
+          Cloud & DevOps
+        </a>
+      </li>
+    </ul>
+  </aside>
+</DocumentFragment>
+`;

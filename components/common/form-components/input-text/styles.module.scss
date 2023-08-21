@@ -1,0 +1,61 @@
+@import "/styles/variables";
+
+.input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  padding: 0.7rem 1.2rem;
+  border: 0.1rem solid $color-black-a25;
+  border-radius: 0.2rem;
+  background-color: $color-white;
+  color: $color-black;
+  font-family: $Source_Sans_Pro_Regular;
+  font-size: 1.6rem;
+  letter-spacing: 0;
+  line-height: 2rem;
+
+  &.disabled {
+    background-color: $color-bg-primary;
+    color: $color-black-a65;
+    cursor: not-allowed;
+  }
+
+  &::placeholder {
+    color: $color-black-a25;
+  }
+
+  &:hover {
+    @media (hover: hover) {
+      border-color: $color-black-a45;
+    }
+  }
+
+  &:focus {
+    border-color: $color-primary-accent;
+  }
+}
+
+.inputWrapper {
+  position: relative;
+  margin-bottom: 1.5rem;
+
+  &.error {
+    margin-bottom: 0.8rem;
+
+    .input {
+      padding-right: 3.2rem;
+      border-color: $color-negative;
+    }
+
+    &::after {
+      content: '\0021';
+      display: inline-block;
+      position: absolute;
+      right: 1.7rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: $color-negative;
+      font-size: 2rem;
+    }
+  }
+}

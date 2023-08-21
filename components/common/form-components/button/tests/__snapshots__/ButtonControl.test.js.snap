@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link renders should ButtonControl renders 1`] = `
+<DocumentFragment>
+  <section
+    class="componentContainer"
+  >
+    <div
+      class="submitWrapper"
+    >
+      <button
+        class="button primary medium send btn SendBtn"
+        type="submit"
+      >
+        Send
+      </button>
+    </div>
+    <button
+      class="button outline medium cancel btn"
+      type="button"
+    >
+      Cancel
+    </button>
+  </section>
+</DocumentFragment>
+`;
+
+exports[`Link renders should Preloader renders 1`] = `[Function]`;

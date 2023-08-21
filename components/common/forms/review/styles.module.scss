@@ -1,0 +1,865 @@
+@import "~v2_common/styles/variables";
+
+$disables-button-background: rgb(41 176 148 / 25%);
+
+.commonMargin {
+  margin: 0 1.6rem;
+
+  @media (min-width: $bp-md) {
+    margin: 0 26.4rem 0 2rem;
+  }
+
+  @media (min-width: $bp-lg) {
+    margin: 0 32rem 0 2.4rem;
+  }
+
+  @media (min-width: $bp-xl) {
+    margin: 0 43.2rem 0 4rem;
+  }
+}
+
+.verticalMargins {
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+
+  &.first {
+    padding-top: 0;
+  }
+
+  &.relatedContent {
+    padding-top: 3.2rem;
+    padding-bottom: 0;
+  }
+
+  &.verticalMarginsFeatures {
+    padding-top: 3.2rem;
+    padding-bottom: 1.6rem;
+
+    @media (min-width: $bp-md) {
+      padding-top: 3.2rem;
+      padding-bottom: 2rem;
+    }
+  }
+
+  &.verticalMarginsImageGallery {
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+
+    @media (min-width: $bp-md) {
+      padding-top: 1.2rem;
+      padding-bottom: 1.2rem;
+    }
+
+    @media (min-width: $bp-lg) {
+      padding-top: 1.6rem;
+      padding-bottom: 1.6rem;
+    }
+
+    @media (min-width: $bp-xl) {
+      padding-bottom: 3.2rem;
+    }
+  }
+
+  &.verticalMarginsUseCases {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  &.verticalMarginsAwards {
+    padding-top: 3.2rem;
+    padding-bottom: 3.2rem;
+  }
+
+  &.verticalMarginsTeamAndVacancies {
+    padding-top: 3.2rem;
+    padding-bottom: 3.2rem;
+  }
+
+  &.verticalMarginsPackage {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  &.verticalMarginsQA {
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+
+    @media (min-width: $bp-md) {
+      padding-top: 3.2rem;
+      padding-bottom: 3.2rem;
+    }
+  }
+}
+
+.ratingWrapper {
+  .headerContainer {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.2rem;
+
+    @media (min-width: $bp-lg) {
+      margin-bottom: 2.4rem;
+    }
+  }
+
+  .icon {
+    margin-right: 1.2rem;
+    font-size: 2.4rem;
+
+    @media (min-width: $bp-lg) {
+      margin-right: 1.6rem;
+    }
+  }
+
+  .title {
+    margin-bottom: 0;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+
+    @media (min-width: $bp-lg) {
+      font-size: 2.2rem;
+      line-height: 2.8rem;
+    }
+  }
+}
+
+.rating {
+  padding-top: 3rem;
+}
+
+.ratingStarsBlock {
+  display: flex;
+}
+
+.ratingStarsBlockLeft {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  @media (min-width: $bp-md) {
+    width: auto;
+    margin-right: 2rem;
+  }
+
+  @media (min-width: $bp-lg) {
+    margin-right: 4rem;
+  }
+}
+
+.ratingStars {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.4rem;
+}
+
+.ratingStarsNumber {
+  font-family: $Museo_Sans_Bold;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  color: $color-black;
+  @media (min-width: $bp-lg) {
+    font-size: 3.2rem;
+    line-height: 4rem;
+  }
+}
+
+.ratingStarsVisualization {
+  display: flex;
+  margin-left: 0.4rem;
+
+  > span {
+    background: url("/src/v2_common/images/solution-page/rating-desktop.png") no-repeat;
+    width: 2.2rem;
+    height: 2.2rem;
+    margin-left: 0.8rem;
+
+    &.default {
+      background-position: 0 0;
+    }
+
+    &.half {
+      background-position: -22px 0;
+    }
+
+    &.full {
+      background-position: -44px 0;
+    }
+  }
+}
+
+.ratingBasedOn {
+  color: rgb(32 32 37 / 65%);
+  font-size: 1.6rem;
+  font-family: $Source_Sans_Pro_Regular;
+  line-height: 2.4rem;
+  margin-bottom: 1.6rem;
+  @media (min-width: $bp-md) {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+
+  @media (min-width: $bp-lg) {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+
+  span {
+    display: inline-block;
+    position: relative;
+    padding-right: 2rem;
+    cursor: pointer;
+    @media (min-width: $bp-md) {
+      padding-right: 0;
+      cursor: default;
+  }
+
+    &::after {
+      content: "";
+      background: url("/src/v2_common/images/solution-page/rating-arrow.svg") no-repeat;
+      display: inline-block;
+      width: 1.2rem;
+      height: 0.8rem;
+      position: absolute;
+      top: 0.9rem;
+      right: 0;
+      @media (min-width: $bp-md) {
+        display: none;
+      }
+    }
+
+    &.active {
+      &::after {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+.writeReviewBtn {
+  width: 100%;
+  font-weight: 600;
+  @media (min-width: $bp-md) {
+    width: auto;
+  }
+}
+
+.ratingStarsBlockRight {
+  display: none;
+  @media (min-width: $bp-md) {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+}
+
+.ratingLine {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+
+.ratingLineStars {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-family: $Source_Sans_Pro_Semibold;
+  margin-right: 1.2rem;
+
+  span {
+    margin-left: 0.4rem;
+    display: none;
+    @media (min-width: $bp-lg) {
+      display: inline;
+    }
+  }
+}
+
+.ratingLineVizualization {
+  background: $color-preloaders;
+  border-radius: 0.2rem;
+  height: 1.2rem;
+  position: relative;
+  flex-grow: 1;
+  max-width: 42.6rem;
+  min-width: 19rem;
+}
+
+.line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.2rem;
+  border-radius: 0.2rem;
+  background: $color-secondary-graphic-02;
+}
+
+.ratingLineCount {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-family: $Source_Sans_Pro_Regular;
+  color: rgb(32 32 37 / 65%);
+  margin-left: 0.4rem;
+  min-width: 2.4rem;
+  text-align: right;
+}
+
+.ratingCommetsWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 2rem;
+}
+
+.ratingCommentsTitle {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  font-family: $Museo_Sans_Bold;
+  color: $color-black;
+  margin-bottom: 1.2rem;
+  @media (min-width: $bp-lg) {
+    font-size: 2.2rem;
+  }
+}
+
+.ratingCommentsCardWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.ratingCard {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-shadow: 0.2rem 0.2rem 1.5rem rgb(49 59 113 / 10%);
+  border-radius: 0.4rem;
+  padding: 1.6rem 1.2rem;
+  box-sizing: border-box;
+  margin-bottom: 1.6rem;
+  max-width: 75.6rem;
+  @media (min-width: $bp-sm) {
+    padding: 1.6rem;
+  }
+  @media (min-width: $bp-sm) {
+    padding: 1.6rem 2rem;
+  }
+
+  @media (min-width: $bp-pre-xl) {
+    padding: 2rem 2.4rem;
+  }
+}
+
+.ratingCardName {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  font-family: $Museo_Sans_Bold;
+  color: $color-black;
+  margin-bottom: 0.4rem;
+  @media (min-width: $bp-lg) {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+  }
+}
+
+.ratingStarsVisualizationSmall {
+  display: flex;
+  margin-bottom: 0.4rem;
+  @media (min-width: $bp-lg) {
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+  }
+
+  > span {
+    background: url("/src/v2_common/images/solution-page/rating-desktop.png") no-repeat;
+    width: 1.4rem;
+    height: 1.4rem;
+    margin-right: 0.6rem;
+
+    &.default {
+      background-position: 0 -22px;
+    }
+
+    &.half {
+      background-position: -14px -22px;
+    }
+
+    &.full {
+      background-position: -28px -22px;
+    }
+  }
+}
+
+.ratingCardReviewOn {
+  color: rgb(32 32 37 / 65%);
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-family: $Source_Sans_Pro_Regular;
+  margin-bottom: 0.8rem;
+  @media (min-width: $bp-xl) {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+}
+
+.ratingCardTitle {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  font-family: $Museo_Sans_Bold;
+  color: $color-black;
+  margin-bottom: 0.8rem;
+  @media (min-width: $bp-lg) {
+    font-size: 2.2rem;
+  }
+}
+
+.ratingCardInfo {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  font-family: $Source_Sans_Pro_Regular;
+  color: $color-black;
+  margin-bottom: 1.2rem;
+}
+
+.ratingCardUsers {
+  color: rgb(32 32 37 / 65%);
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-family: $Source_Sans_Pro_Regular;
+  margin-bottom: 1.2rem;
+}
+
+.ratingCardThankYou {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-family: $Source_Sans_Pro_Regular;
+  color: $color-positive-text;
+  margin-bottom: 0.8rem;
+  position: relative;
+  padding-left: 3rem;
+  height: 2.4rem;
+
+  &::after {
+    content: '';
+    width: 2.4rem;
+    height: 2.4rem;
+    background: url("/src/v2_common/images/solution-page/helpfull.png") no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.ratingStarsBlockMobile {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: $bp-md) {
+    display: none;
+  }
+
+  .ratingLineVizualization {
+    max-width: 21.3rem;
+  }
+}
+
+.ratingCardHelpfull {
+  margin-bottom: 1.2rem;
+}
+
+.ratingForm {
+  position: relative;
+  background: $color-bg-primary;
+  padding: 2rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.6rem;
+
+  @media (min-width: $bp-md) {
+    padding: 2rem;
+  }
+}
+
+.ratingFormRate {
+  font-family: $Source_Sans_Pro_Regular;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: $color-dark-black;
+  padding-bottom: 0.8rem;
+
+  span {
+    color: $color-negative;
+  }
+}
+
+.ratingFormStars {
+  padding-bottom: 1.6rem;
+
+  .ratingStarsVisualization {
+    margin-left: 0;
+
+    span {
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+.ratingFormElements {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: $bp-lg) {
+    flex-direction: row;
+  }
+}
+
+.ratingFormElementsLeft {
+  padding-bottom: 1.6rem;
+  @media (min-width: $bp-lg) {
+    width: 50%;
+    margin-right: 0.6rem;
+  }
+}
+
+.ratingFormFirstName {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.2rem;
+
+  label {
+    font-family: $Source_Sans_Pro_Regular;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: $color-black;
+    margin-bottom: 0.4rem;
+  }
+
+  input {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    padding: 0.7rem 1.2rem;
+    border: 0.1rem solid $color-black-a25;
+    border-radius: 0.2rem;
+    background-color: $color-white;
+    color: $color-black;
+    font-family: $Source_Sans_Pro_Regular;
+    font-size: 1.6rem;
+    letter-spacing: 0;
+    line-height: 2rem;
+
+    &::placeholder {
+      color: $color-black-a25;
+    }
+
+    &:hover {
+      @media (hover: hover) {
+        border-color: $color-black-a45;
+      }
+    }
+
+    &:focus {
+      border-color: $color-primary-accent;
+    }
+  }
+}
+
+.ratingFormCheckbox {
+  display: flex;
+  margin-bottom: 1.6rem;
+  align-items: center;
+
+  label {
+    font-family: $Source_Sans_Pro_Regular;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: $color-black;
+  }
+
+  input {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+}
+
+.ratingFormText {
+  font-family: $Source_Sans_Pro_Regular;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+
+  a {
+    text-decoration: none;
+    font-family: $Source_Sans_Pro_Bold;
+    color: $color-secondary-accent;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+}
+
+.ratingFormElementsRight {
+  margin-bottom: 0;
+  @media (min-width: $bp-lg) {
+    width: 50%;
+    margin-left: 0.6rem;
+  }
+}
+
+.ratingFormFirstHeadline {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3.6rem;
+
+  > div {
+    margin-bottom: 0.4rem;
+  }
+
+  label {
+    font-family: $Source_Sans_Pro_Regular;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: $color-black;
+    margin-bottom: 0.4rem;
+  }
+
+  input {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    padding: 0.7rem 1.2rem;
+    border: 0.1rem solid $color-black-a25;
+    border-radius: 0.2rem;
+    background-color: $color-white;
+    color: $color-black;
+    font-family: $Source_Sans_Pro_Regular;
+    font-size: 1.6rem;
+    letter-spacing: 0;
+    line-height: 2rem;
+
+    &::placeholder {
+      color: $color-black-a25;
+    }
+
+    &:hover {
+      @media (hover: hover) {
+        border-color: $color-black-a45;
+      }
+    }
+
+    &:focus {
+      border-color: $color-primary-accent;
+    }
+  }
+}
+
+.ratingFormFirstTextaria {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3.2rem;
+
+  label {
+    font-family: $Source_Sans_Pro_Regular;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: $color-black;
+    margin-bottom: 0.4rem;
+  }
+
+  textarea {
+    resize: vertical;
+    height: 14.8rem;
+    min-height: 8.4rem;
+    max-height: 30rem;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    padding: 0.8rem 1.2rem;
+    border: 0.1rem solid $color-black-a25;
+    border-radius: 0.2rem;
+    background-color: $color-white;
+    color: $color-black;
+    font-family: $Source_Sans_Pro_Regular;
+    font-size: 1.6rem;
+    letter-spacing: 0;
+    line-height: 2rem;
+
+    &::placeholder {
+      color: $color-black-a25;
+    }
+
+    &:hover {
+      @media (hover: hover) {
+        border-color: $color-black-a45;
+      }
+    }
+
+    &:focus {
+      border-color: $color-primary-accent;
+    }
+  }
+}
+
+.ratingFormCount {
+  text-align: right;
+  font-family: $Source_Sans_Pro_Regular;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: rgb(32 32 37 / 45%);
+  margin-top: 0.4rem;
+}
+
+.ratingFormCaptchaMobile {
+  margin-bottom: 1.6rem;
+  transform-origin: left;
+
+  @media (max-width: 400px) {
+    border-right: 1px solid #d3d3d3;
+    border-radius: 3px;
+    overflow: hidden;
+    max-width: 100%;
+    width: fit-content;
+  }
+
+  @media (min-width: $bp-lg) {
+    display: none;
+  }
+}
+
+.ratingFormCaptchaDesktop {
+  display: none;
+  @media (min-width: $bp-lg) {
+    display: block;
+    margin-top: 1.6rem;
+  }
+}
+
+.ratingFormBtns {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: $bp-lg) {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
+
+.ratingFormSubmit {
+  margin-bottom: 1.2rem;
+
+  @media (min-width: $bp-lg) {
+    margin-bottom: 0;
+    order: 1;
+    margin-left: 1.2rem;
+  }
+
+  &.disabled {
+    color: $color-white;
+    border-color: transparent;
+    background-color: $disables-button-background;
+    border-radius: 0.2rem;
+
+    &:hover {
+      @media (hover: hover) {
+        color: $color-white;
+        border-color: transparent;
+        background-color: $disables-button-background;
+      }
+    }
+
+    cursor: not-allowed;
+  }
+}
+
+.ratingFormCancel {
+  @media (min-width: $bp-lg) {
+    margin-bottom: 0;
+    order: 0;
+  }
+}
+
+.ratingFormSuccess {
+  min-height: 39.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media (min-width: $bp-sm) {
+    min-height: 41.6rem;
+  }
+
+  @media (min-width: $bp-md) {
+    min-height: 67.4rem;
+  }
+
+  @media (min-width: $bp-lg) {
+    min-height: 41.2rem;
+  }
+
+  @media (min-width: $bp-xl) {
+    min-height: 43.2rem;
+  }
+}
+
+.ratingFormSuccessText {
+  font-family: $Museo_Sans_Bold;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  color: $color-dark-black;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.starsRow {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  .star {    
+    width: 2.2rem;
+    height: 2.1rem;
+    padding-right: 1rem;
+    cursor: pointer;
+    z-index: 2;
+    transform: translate(0, 0);
+
+    &:last-of-type {
+      padding-right: 0.7rem;
+    }
+  }
+
+  &.active {
+    svg {
+      path {
+        fill-opacity: 1;
+        stroke-opacity: 1;
+      }
+    }
+
+    .actionBtn {
+      &::before {
+        border-right: 0.2rem solid $color-white;
+        border-bottom: 0.2rem solid $color-white;
+      }
+    }
+  }
+}
+
+.starContainer {
+  position: relative;
+  width: fit-content;
+  z-index: 1;
+
+  &:before {
+    content: '';
+    display: block;
+    width: 150%;
+    height: 300%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+}
+
+.loadingBtn {
+  min-width: 17rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

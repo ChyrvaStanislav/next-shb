@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BlogPost snapshots should BlogPost match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="postItemsInner"
+  >
+    <div
+      class="postLabel"
+    >
+      <div
+        class="postType"
+        type="p"
+        variant="h4"
+      >
+        Blog Post
+      </div>
+    </div>
+    <div
+      class="imageContainer moreThenSm"
+    >
+      <div
+        class="imgWrapper"
+      >
+        <a
+          href="/blog/post/swing-trading-vs-day-trading"
+          rel="noopener noreferrer"
+        >
+          <div
+            class="whiteCircle"
+          >
+            <img
+              alt="Swing Trading vs Day Trading"
+              class="image blogImage"
+              src="https://cdn.media.amplience.net/i/epammarketplace/header?maxW=800&qlt=80&fmt=webp&bg=rgb(255,255,255)&version="
+              title="Swing Trading vs Day Trading"
+            />
+          </div>
+        </a>
+      </div>
+    </div>
+    <div
+      class="infoContainer"
+    >
+      <div
+        class="title titleAdditional"
+        type="p"
+        variant="h3"
+      >
+        <a
+          class="link"
+          href="/blog/post/swing-trading-vs-day-trading"
+        >
+          Swing Trading vs Day Trading
+        </a>
+      </div>
+      <div
+        class="additionalInfoContainer"
+      >
+        <div
+          class="date"
+          type="span"
+          variant="small_secondary"
+        >
+          November 8, 2022
+        </div>
+        <div
+          class="timeRead"
+          type="span"
+          variant="small_secondary"
+        >
+          5 min read
+        </div>
+      </div>
+      <div
+        class="description"
+        type="p"
+        variant="p_body"
+      >
+        <div>
+          Although very similar, the main difference between day.
+        </div>
+      </div>
+      <div
+        class="tagsContainer"
+      >
+        <div
+          class="wrapper"
+        />
+        <a
+          class="greyChip tagItem dots show blogTagChip"
+          href="/"
+        >
+          ...
+        </a>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

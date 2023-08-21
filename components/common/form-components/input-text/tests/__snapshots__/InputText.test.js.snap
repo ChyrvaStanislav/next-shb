@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputText renders should InputText renders 1`] = `
+<DocumentFragment>
+  <section
+    class="textareaContainer"
+  >
+    <label
+      class="small_filters label"
+      for="formId-name"
+      other=""
+    >
+      Some label
+    </label>
+    <div
+      class="inputWrapper someClass"
+    >
+      <input
+        autocomplete="off"
+        class="input"
+        data-testid="input-text"
+        id="formId-name"
+        name="name"
+        placeholder="Some placeholder"
+        type="text"
+        value=""
+      />
+    </div>
+  </section>
+</DocumentFragment>
+`;

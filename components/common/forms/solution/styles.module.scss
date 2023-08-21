@@ -1,0 +1,380 @@
+@import "~v2_common/styles/variables";
+
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $bp-md) {
+    flex-direction: row;
+    min-width: 52.8rem;
+  }
+
+  @media (min-width: $bp-lg) {
+    min-width: 55.2rem;
+  }
+
+  .commonMargin {
+    margin-bottom: 2.4rem;
+  }
+}
+
+.aside {
+  box-sizing: border-box;
+  padding: 2.8rem 1.6rem;
+  background-color: $color-bg-primary;
+  order: 1;
+  margin: 0 1.6rem 2.4rem;
+  @media (min-width: $bp-md) {
+    width: 27.2rem;
+    padding: 2rem 2.4rem 16.6rem;
+    order: 0;
+    margin: 0;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: fixed;
+      background: $color-bg-primary;
+      height: 100%;
+      display: block;
+      left: 0;
+      top: 0;
+      z-index: -1;
+      width: 27.2rem;
+    }
+
+    .servicesInfo {
+      position: static;
+      max-width: inherit;
+    }
+  }
+
+  @media (min-width: $bp-lg) {
+    width: 34.8rem;
+    padding: 2rem 3.6rem 16.6rem;
+
+    &::after {
+      width: 34.8rem;
+    }
+  }
+}
+
+.mainContent {
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  padding: 2.8rem 1.6rem 1.2rem;
+  order: 0;
+
+  @media (min-width: $bp-md) {
+    max-width: 52.8rem;
+    padding: 4rem 2.4rem 0;
+    order: 1;
+  }
+
+  @media (min-width: $bp-lg) {
+    max-width: 55.2rem;
+    padding: 4rem 3.6rem 0;
+  }
+}
+
+.formContainer {
+  margin-top: 5.6rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: calc(100% - 6rem);
+  box-sizing: border-box;
+
+  @media (min-width: $bp-md) {
+    margin-top: 6rem;
+    height: calc(100% - 13.6rem);
+  }
+
+  @media (min-width: $bp-lg) {
+    margin-top: 6.4rem;
+    height: calc(100% - 14rem);
+  }
+}
+
+.headerContainer {
+  @media (min-width: $bp-md) {
+    padding: 2rem 2.4rem 1.6rem;
+  }
+
+  @media (min-width: $bp-lg) {
+    padding: 2rem 2.4rem 2rem 3.6rem;
+  }
+}
+
+.recaptcha {
+  margin-bottom: 1.8rem;
+  transform: scale(0.951) translateX(-8px);
+
+  @media (min-width: $bp-sm) {
+    transform: none;
+  }
+
+  @media (min-width: $bp-md) {
+    margin-bottom: 1.6rem;
+  }
+
+  @media (min-width: $bp-lg) {
+    margin-bottom: 1.8rem;
+  }
+}
+
+.solutionWrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.6rem;
+
+  .solutionTitle {
+    margin-bottom: 0;
+  }
+
+  .solutionImage {
+    width: 4rem;
+    height: 4rem;
+    margin-right: 1.2rem;
+    flex-shrink: 0;
+    display: inline-block;
+
+    @media (min-width: $bp-lg) {
+      width: 4rem;
+      height: 4rem;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &.whenExistPackage {
+    margin-bottom: 2rem;
+  }
+}
+
+.solutionNote {
+  font-family: $Source_Sans_Pro_Regular;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: $color-black;
+  margin-bottom: 2rem;
+  @media (min-width: $bp-lg) {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+}
+
+.solutionPackageWrapper {
+  margin-bottom: 1.6rem;
+}
+
+.packageWrapper {
+  display: none;
+
+  @media (min-width: $bp-md) {
+    display: inline-block;
+    margin-bottom: 3.6rem;
+  }
+
+  @media (min-width: $bp-lg) {
+    margin-bottom: 4rem;
+  }
+
+  @media (min-width: $bp-xl) {
+    margin-bottom: 5.4rem;
+  }
+}
+
+.mobilePackageWrapper {
+
+  @media (min-width: $bp-md) {
+    display: none;
+  }
+}
+
+.heading {
+  margin-bottom: 0.6rem;
+  font-family: $Museo_Sans_Bold;
+  letter-spacing: 0;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+
+  @media (min-width: $bp-md) {
+    margin-bottom: 0.4rem;
+  }
+
+  @media (min-width: $bp-lg) {
+    margin-bottom: 0.2rem;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+  }
+}
+
+.subheading {
+  margin-bottom: 1.6rem;
+  max-width: 28.8rem;
+  color: $color-black;
+  font-family: $Source_Sans_Pro_Regular;
+  letter-spacing: 0;
+  font-size: 1.4rem;
+  line-height: 2rem;
+
+  @media (min-width: $bp-md) {
+    max-width: none;
+  }
+
+  @media (min-width: $bp-lg) {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+}
+
+.hiddenMd {
+  @media (min-width: $bp-md) {
+    display: none;
+  }
+}
+
+.visibleMd {
+  display: none;
+
+  @media (min-width: $bp-md) {
+    display: block;
+  }
+}
+
+.disabled {
+  color: $color-black-a25;
+}
+
+.active {
+  color: $color-black;
+}
+
+.hintText {
+  font-size: 1.4rem;
+  line-height: 2.0rem;
+}
+
+.informationIcon {
+  border: 0.1rem solid $color-secondary-graphic-02;
+  color: $color-secondary-graphic-02;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 1.4rem;
+  height: 1.4rem;
+  float: left;
+  font-size: 1.1rem;
+  margin:  0.3rem 0.9rem 1.5rem 0;
+  box-sizing: border-box;
+}
+
+.servicesInfo {
+  margin-top: 1.6rem;
+}
+
+.mobileSolutionLogo {
+  display: flex;
+  align-items: center;
+  margin: 1.2rem 1.6rem 0;
+  @media (min-width: $bp-md) {
+    display: none;
+  }
+
+  .solutionImage {
+    width: 4.4rem;
+    height: 4.4rem;
+    margin-right: 1.2rem;
+    flex-shrink: 0;
+  }
+
+  .solutionTitle {
+    margin-bottom: 0;
+  }
+}
+
+.desctopCapcha {
+  display: none;
+  @media (min-width: $bp-md) {
+    display: block;
+  }
+}
+
+.mobileCapcha {
+  margin-bottom: 2.4rem;
+  padding: 0 1.6rem;
+  order: 2;
+  @media (min-width: $bp-md) {
+    display: none;
+  }
+}
+
+.epamLogin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: $color-bg-primary;
+  border: 1px solid rgb(32 32 37 / 25%);
+  border-radius: 4px;
+  margin-bottom: 1.6rem;
+  padding: 1.6rem;
+}
+
+.epamLoginTitle {
+  margin-bottom: 0.8rem;
+  font-family: $Source_Sans_Pro_Semibold;
+  font-size: 1.4rem;
+  color: $color-black;
+  line-height: 2rem;
+}
+
+.epamLoginDescr {
+  max-width: 35rem;
+  font-family: $Source_Sans_Pro_Regular;
+  font-size: 1.4rem;
+  color: $color-black;
+  line-height: 2rem;
+  text-align: center;
+  margin-bottom: 1.6rem;
+}
+
+.formContactSolution {
+  padding-top: 0.8rem;
+}
+
+.formContactSolution > div {
+  box-shadow: 0 0 1.8rem 0 rgb(10 10 72 / 16%);
+  border-radius: 0.4rem;
+  max-width: none;
+  background: none;
+  margin-left: 0;
+  @media (min-width: $bp-sm) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.formContactSolution > div > p {
+  color: $color-black !important;
+  margin-bottom: 0 !important;
+  width: auto !important;
+  padding-bottom: 1.2rem;
+  font-size: 1.6rem !important;
+  line-height: 2.4rem !important;
+  @media (min-width: $bp-sm) {
+    padding-bottom: 0;
+  }
+}
+
+.formContactSolution > div > div a {
+  margin-right: 1.2rem !important;
+  height: 3.2rem !important;
+  width: 12rem !important;
+}

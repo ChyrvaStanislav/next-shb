@@ -1,0 +1,41 @@
+@import "~v2_common/styles/common";
+
+.iconWrapper {
+    border: 0.1rem solid $color-secondary-accent;
+    color: $color-secondary-accent;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 1.4rem;
+    height: 1.4rem;
+    font-size: 1.1rem;
+    box-sizing: border-box;
+
+    &:hover {
+        cursor: pointer;
+      }
+  }
+
+  .hintBold {
+    font-weight: 700;
+  }
+
+  .hintText {
+    color: $color-black;
+    padding: 0.8rem 1.2rem;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    width: 26.4rem;
+
+    @media (min-width: $bp-sm) {
+      width: 30.9rem;
+      font-size: 1.6rem;
+    }
+    @media (min-width: $bp-md) {
+      width: 26.5rem;
+    }
+    @media (min-width: $bp-lg) {
+      width: 30.9rem;
+    }
+  }

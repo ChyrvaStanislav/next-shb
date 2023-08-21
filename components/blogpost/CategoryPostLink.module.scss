@@ -1,0 +1,7 @@
+@import "variables";
+
+a.link {
+  &:hover {
+    color: $color-secondary-accent-hover;
+  }
+}

@@ -1,0 +1,14 @@
+@import "~v2_common/styles/variables";
+
+.formContainer {
+  padding-top: 4.4rem;
+
+  @media (min-width: $bp-md) {
+    padding-top: 4rem;
+  }
+}
+
+.inputArea {
+  margin-top: 1.8rem;
+  margin-bottom: 2.4rem;
+}

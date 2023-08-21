@@ -1,0 +1,404 @@
+@import "/styles/common";
+@import "/styles/variables";
+
+$color-divide-line: rgb(216 216 216 / 45%);
+$color-bg-footer: fade-out($color-white,.92);
+
+.footer {
+    background-color: $color-black;
+}
+
+.separator {
+    width: 8.8rem;
+    height: 0.1rem;
+    background-color: $color-white-a15;
+    margin: 0.8rem 0;
+    @media (min-width: $bp-md) {
+        width: 12rem;
+    }
+
+    @media (min-width: $bp-lg) {
+        width: 14.8rem;
+        margin: 0.8rem 0;
+    }
+}
+
+.footerContainer, .copyrightBlock {
+    padding: 2.4rem 1.6rem;
+
+    @media (min-width: $bp-md) {
+        padding: 3.2rem 2.4rem 0;
+    }
+
+    @media (min-width: $bp-lg) {
+        padding: 3.6rem 4rem 0;
+    }
+    @media (min-width: $bp-xl) {
+        padding: 4rem 4rem 0;
+    }
+}
+
+.footerContainerInternal {
+    @media (min-width: $bp-lg) {
+        padding: 4rem 4rem 0;
+    }
+}
+
+.footerContent {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: .4rem;
+    @media (min-width: $bp-md) {
+        padding-bottom: 3.2rem;
+    }
+    @media (min-width: $bp-lg) {
+        padding-bottom: 5.6rem;
+    }
+    @media (min-width: $bp-xl) {
+        padding-bottom: 6rem;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.logo {
+    flex-shrink: 0;
+    width: 17.2rem;
+    height: 1.9rem;
+    margin-bottom: 2.4rem;
+    @media (min-width: $bp-md) {
+        margin-bottom: 2.4rem;
+    }
+    @media (min-width: $bp-xl) {
+        margin-bottom: 0;
+        margin-right: 13.6rem;
+    }
+}
+
+.categoriesList {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: $bp-md) {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    @media (min-width: $bp-xl) {
+        flex: 1;
+    }
+}
+
+.categoriesListItem {
+    min-width: 16rem;
+    margin-bottom: 2rem;
+    @media (min-width: $bp-md) {
+        min-width: 12rem;
+        margin-right: 4.8rem;
+        flex: 1;
+        margin-bottom: 2.4rem;
+    }
+    @media (min-width: $bp-lg) {
+        &:nth-child(3) {
+            margin-right: 8rem;
+        }
+
+        margin-bottom: 0;
+        flex: 1;
+    }
+
+    @media (min-width: $bp-md) {
+        &:first-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &.mobile {
+        display: block;
+
+        @media (min-width: $bp-md) {
+            display: none;
+        }
+    }
+
+    &.desktop {
+        display: none;
+        
+        @media (min-width: $bp-md) {
+            display: block;
+        }
+    }
+}
+
+.categoriesListItemAbout {
+    .tagsList {
+        max-height: initial;
+    }
+}
+
+.categoriesListTitle {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-family: $Source_Sans_Pro_Bold;
+    letter-spacing: .15rem;
+    text-transform: uppercase;
+    color: $color-white;
+    @media (min-width: $bp-md) {
+        color: $color-white-a45;
+    }
+}
+
+.categoriesListLabel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: .5s ease-in margin-bottom;
+    @media (min-width: $bp-md) {
+        margin-bottom: 1.2rem;
+    }
+}
+
+.categoriesListLabelAbout {
+    margin-bottom: 1.2rem;
+}
+
+.iconBtn {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 1.2rem;
+    padding: 0.75rem 0.6rem;
+    transition: transform 300ms;
+    @media (min-width: $bp-md) {
+        display: none;
+    }
+}
+
+.tagsListItem {
+    display: block;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-family: $Source_Sans_Pro_Regular;
+    color: $color-white;
+    margin-bottom: .8rem;
+    text-size-adjust: none;
+
+    @media (min-width: $bp-lg) {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+
+        &:hover {
+            color: $color-primary-hover;
+        }
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    text-decoration: none;
+}
+
+.tagsListButton {
+    padding: 0;
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.checkbox {
+    display: none;
+}
+
+.tagsList {
+    max-height: 0;
+    overflow: hidden;
+    transition: .5s ease max-height;
+
+    @media (min-width: $bp-md) {
+        max-height: none;
+        overflow: auto;
+    }
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.checkbox:checked ~ .tagsList {
+    max-height: 50rem;
+    overflow: auto;
+}
+
+.checkbox:checked ~ .categoriesListLabel{
+    margin-bottom: .8rem;
+    @media (min-width: $bp-lg) {
+        margin-bottom: 1.2rem;
+    }
+
+    & .categoriesListTitle {
+        color: $color-primary-accent;
+        @media (min-width: $bp-md) {
+            color: $color-white-a45;
+        }
+    }
+
+    & .iconBtn {
+        transform: rotate(180deg);
+    }
+}
+
+.copyrightContainer {
+    background-color: $color-bg-footer;
+}
+
+.copyrightBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+    text-size-adjust: none;
+    @media (min-width: $bp-md) {
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+    }
+    @media (min-width: $bp-lg) {
+        font-size: 1.4rem;
+        line-height: 2rem;
+        padding-bottom: 2.4rem;
+        padding-top: 2.4rem;
+    }
+    @media (min-width: $bp-xl) {
+        padding-bottom: 2.8rem;
+        padding-top: 2.8rem;
+    }
+
+    .link {
+        display: flex;
+    }
+
+    .copyright {
+        color: $color-white;
+        text-size-adjust: none;
+        font-size: 1.4rem;
+        line-height: 2rem;
+        @media (min-width: $bp-lg) {
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+        }
+
+        .copyrightNotice {
+            display: block;
+            @media (min-width: $bp-md) {
+                display: inline;
+            }
+        }
+    }
+
+    .icon {
+        width: 2.4rem;
+        height: 2.4rem;
+
+        path[data-fill] {
+            fill: $color-white-a65;
+        }
+    }
+}
+
+.footerContentInternal {
+    @media (min-width: $bp-md) {
+        padding-bottom: 3.6rem;
+    }
+    @media (min-width: $bp-lg) {
+        flex-direction: row;
+        padding-bottom: 1.2rem;
+    }
+
+    .logo {
+        @media (min-width: $bp-lg) {
+            margin-right: 4.8rem;
+        }
+        @media (min-width: $bp-xl) {
+            margin-right: 13.6rem;
+            margin-bottom: 2.4rem;
+        }
+    }
+
+    .categoriesList {
+        flex: auto;
+    }
+
+    .categoriesListItem {
+        margin-bottom: 2rem;
+        @media (min-width: $bp-md) {
+            margin-right: 4.8rem;
+            margin-bottom: 4.8rem;
+            min-width: 18%;
+        }
+        @media (min-width: $bp-lg) {
+            min-width: 25%;
+        }
+        @media (min-width: $bp-xl) {
+            margin-bottom: 4.4rem;
+        }
+
+        .tagsList {
+            max-width: 17.2rem;
+        }
+
+        &.categoriesListItemSource {
+            .tagsList {
+                @media (min-width: $bp-md) {
+                    display: flex;
+                    max-width: none;
+                    flex-wrap: wrap;
+                }
+                @media (min-width: $bp-lg) {
+                    flex-direction: column;
+                }
+
+                a {
+                    @media (min-width: $bp-md) {
+                        display: block;
+                        min-width: 50%;
+                        box-sizing: border-box;
+
+                        &:nth-child(2n+2) {
+                            margin-left: 2rem;
+                            min-width: 43%;
+                        }
+                    }
+                    @media (min-width: $bp-lg) {
+                        width: auto;
+
+                        &:nth-child(2n+2) {
+                            margin-left: 0;
+                            min-width: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .categoriesListItemAbout {
+        @media (min-width: $bp-lg) {
+            min-width: 16rem;
+        }
+    }
+
+    .licenceTypes {
+        min-width: 100%;
+    }
+}
+
+.typeBlock {
+    .tagsListItem {
+        &:last-child {
+            margin-bottom: 0.8rem;
+        }
+    }
+}
+
+.licenceTypes {
+    margin-top: 2rem;
+}

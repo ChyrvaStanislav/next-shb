@@ -1,0 +1,16 @@
+@import "/styles/variables";
+
+.formContainer {
+  height: calc(100% - 11.4rem);
+  max-height: none;
+
+  @media (min-width: $bp-md) {
+    margin-top: 7rem;
+    height: calc(100% - 14.8rem);
+  }
+
+  @media (min-width: $bp-lg) {
+    margin-top: 7.6rem;
+    height: calc(100% - 15.2rem);
+  }
+}

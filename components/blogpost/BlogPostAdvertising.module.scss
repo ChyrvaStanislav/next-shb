@@ -1,0 +1,210 @@
+@import "variables";
+
+.blogPostAdvertisingWrapper {
+  display: flex;
+  margin: 1.6rem 0;
+  width: 100%;
+
+  &.dark {
+    .blogPostAdvertisingInner {
+      background: $color-bg-darkblue-02;
+
+      &::after {
+        background: linear-gradient(0deg, #1A255A 0%, rgb(26 37 90 / 48%) 33.33%, rgb(26 37 90 / 2%) 66.67%, rgb(245 247 250 / 0%) 100%, rgb(26 37 90 / 0%) 100%);
+      }
+    }
+
+    .blogPostAdvertisingTitle {
+      color: $color-white;
+    }
+
+    .blogPostAdvertisingDescr {
+      color: $color-white;
+    }
+
+    .blogPostAdvertisingImageWrapperLight {
+      display: none;
+    }
+
+    .blogPostAdvertisingImageWrapperDark {
+      display: flex;
+    }
+  }
+
+  .blogPostAdvertisingInner {
+    background: $color-bg-primary;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex-basis: 100%;
+    border-radius: 0.4rem;
+    
+    @media (min-width: $bp-sm) {
+      flex-direction: row;
+      overflow: hidden;
+    }
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 5.6rem;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(0deg, #F5F7FA 0%, rgb(245 247 250 / 60%) 33.33%, rgb(231 233 237 / 12%) 66.67%, rgb(245 247 250 / 0%) 100%);
+      border-radius: 0 0 0.4rem 0.4rem;
+
+    }
+  }
+
+  .blogPostAdvertisingLeft {
+    margin-bottom: 0.8rem;
+    padding: 1.6rem 1.6rem 0;
+    @media (min-width: $bp-sm) {
+      width: 50%;
+      box-sizing: border-box;
+      margin-bottom: 0;
+      padding-bottom: 2.4rem;
+    }
+
+    @media (min-width: $bp-md) {
+      padding: 2.4rem 1.6rem 3.2rem 2.4rem;
+    }
+
+    @media (min-width: $bp-lg) {
+      padding: 2.4rem 1.6rem 3.2rem 2.4rem;
+    }
+
+    @media (min-width: $bp-xl) {
+      padding: 3.2rem 1.6rem 4rem 3.2rem;
+    }
+  }
+
+  .blogPostAdvertisingTitle {
+    font-family: $Museo_Sans_Bold;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    margin-bottom: 0.8rem;
+    @media (min-width: $bp-lg) {
+      font-size: 3.2rem;
+      line-height: 4rem;
+    }
+  }
+
+  .blogPostAdvertisingDescr {
+    font-family: $Source_Sans_Pro_Regular;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    margin-bottom: 2rem;
+
+    @media (min-width: $bp-sm) {
+      margin-bottom: 2.4rem;
+    }
+
+    @media (min-width: $bp-lg) {
+      font-size: 1.8rem;
+      line-height: 2.8rem;
+      margin-bottom: 3.2rem;
+    }
+  }
+
+  .blogPostAdvertisingBtnWrapper {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    gap: 1.2rem;
+
+    @media (max-width: $bp-sm) {
+      justify-content: center;
+    }
+
+    .blogPostAdvertisingPrimaryBtn {
+      max-width: 23.2rem;
+      color: $color-white;
+    }
+
+    .blogPostAdvertisingOutlineBtn {
+      max-width: 23.2rem;
+      color: $color-primary-accent;
+
+      &:hover {
+        color: $color-white;
+      }
+    }
+
+    .oneOfTwoButtons {
+      @media (max-width: $bp-sm) {
+        width: calc(50% - 0.6rem);
+      }
+    }
+
+    .singleButton {
+      @media (max-width: $bp-sm) {
+        width: 100%;
+      }
+    }
+
+    .oneOfTwoButtons, .singleButton {
+      @media (max-width: $bp-sm) {
+        letter-spacing: 0.12rem;
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+        padding: 0.7rem 1.2rem;
+        max-width: unset;
+      }
+    }
+  }
+
+  .blogPostAdvertisingImageWrapperLight, .blogPostAdvertisingImageWrapperDark {
+    @media (min-width: $bp-sm) {
+      flex-basis: 100%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+    }
+
+    &.withTwoButtons {
+        @media (min-width: $bp-sm) and (max-width: 768px) {
+            transform: translateX(6.5rem);
+        }
+    }
+  }
+
+  .blogPostAdvertisingImageWrapperDark {
+    display: none;
+  }
+
+  .blogPostAdvertisingRight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    @media (min-width: $bp-sm) {
+      width: 50%;
+    }
+
+    @media (min-width: $bp-md) {
+      padding-top: 0;
+    }
+
+    picture {
+      @media (min-width: $bp-sm) {
+        display: block;
+        text-align: right;
+      }
+    }
+
+    img {
+      max-height: 100% !important;
+      @media (min-width: $bp-sm) {
+        object-fit: unset;
+        width: auto;
+      }
+
+      @media (min-width: $bp-sm) {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}

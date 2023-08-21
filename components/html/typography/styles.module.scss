@@ -1,0 +1,190 @@
+@import "/styles/variables";
+
+.p_body {
+  color: $color-black;
+  font-family: $Source_Sans_Pro_Regular;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  margin-bottom: 0.8rem;
+
+  @media (min-width: $bp-lg) {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    margin-bottom: 1.2rem;
+  }
+}
+
+.p_links {
+  display: inline;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  color: $color-secondary-accent;
+  font-family: $Source_Sans_Pro_Semibold;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  cursor: pointer;
+  transition: color 300ms linear;
+
+  &:hover {
+    color: $color-secondary-accent-hover;
+  }
+
+  @media (min-width: $bp-lg) {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+}
+
+.small_links {
+  color: $color-secondary-accent;
+  font-family: $Source_Sans_Pro_Regular;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  cursor: pointer;
+
+  @media (min-width: $bp-lg) {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+
+  transition: color 300ms linear;
+
+  &:hover {
+    color: $color-secondary-accent-hover;
+  }
+}
+
+.small_tags {
+  color: $color-black;
+  font-family: $Source_Sans_Pro_Semibold;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: color 300ms linear;
+
+  &:hover {
+    color: $color-secondary-accent-hover;
+  }
+}
+
+.small_secondary {
+  color: $color-secondary;
+  font-family: $Source_Sans_Pro_Regular;
+  font-size: 1.4rem;
+  line-height: 2rem;
+
+  @media (min-width: $bp-lg) {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+}
+
+.small_tags {
+  color: $color-black;
+  font-family: $Source_Sans_Pro_Semibold;
+  letter-spacing: 0.2rem;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
+
+.h5 {
+  color: $color-black;
+  font-family: $Source_Sans_Pro_Bold;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  margin-bottom: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  @media (min-width: $bp-lg) {
+    margin-bottom: 1.2rem;
+  }
+}
+
+.h4 {
+  font-family: $Museo_Sans_Bold;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  margin-bottom: 0.8rem;
+
+  @media (min-width: $bp-lg) {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    margin-bottom: 1.2rem;
+  }
+}
+
+.h3 {
+  font-family: $Museo_Sans_Bold;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  margin-bottom: 0.8rem;
+
+  @media (min-width: $bp-lg) {
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+    margin-bottom: 1.2rem;
+  }
+}
+
+.h2 {
+  font-family: $Museo_Sans_Bold;
+  font-size: 2.2rem;
+  line-height: 2.8rem;
+  margin-bottom: 1.2rem;
+
+  @media (min-width: $bp-lg) {
+    font-size: 2.6rem;
+    line-height: 3.6rem;
+    margin-bottom: 1.6rem;
+  }
+}
+
+.h1 {
+  font-family: $Museo_Sans_Bold;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  margin-bottom: 1.6rem;
+
+  @media (min-width: $bp-lg) {
+    font-size: 3.2rem;
+    line-height: 4rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.quotes {
+  color: $color-black;
+  font-family: $Museo_Sans_Semibold;
+  font-size: 2rem;
+  line-height: 2.8rem;
+
+  @media (min-width: $bp-lg) {
+    font-size: 2.6rem;
+    line-height: 3.6rem;
+  }
+}
+
+.button {
+  color: $color-secondary-accent;
+  font-family: $Source_Sans_Pro_Semibold;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  background: none;
+  border: none;
+  transition: color 300ms linear;
+
+  &:hover {
+    color: $color-secondary-accent-hover;
+  }
+
+  @media (min-width: $bp-lg) {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+}

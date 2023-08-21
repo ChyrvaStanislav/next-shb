@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot matching Should User match snapshot 1`] = `
+<DocumentFragment>
+  <section
+    class="userComponent"
+    tabindex="0"
+  >
+    <div
+      class="bg"
+    >
+      <button
+        class="btn"
+        type="button"
+      >
+        <img
+          alt="avatar"
+          class="avatar"
+          src="https://static.cdn.epam.com/avatar/2859d3f1e8714203e0a0cdcb09dba09b.jpg"
+        />
+      </button>
+    </div>
+  </section>
+</DocumentFragment>
+`;

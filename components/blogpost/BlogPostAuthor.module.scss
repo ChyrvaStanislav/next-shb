@@ -1,0 +1,90 @@
+@import "variables";
+
+.blogPostAuthorWrapper {
+  background: url("/src/v2_common/images/blog/BlogPost_AuthorCard_320.jpg") no-repeat;
+  background-size: cover;
+  display: flex;
+  border-radius: 0.4rem;
+  padding: 1.6rem;
+  margin-top: 3.2rem;
+  @media (min-width: $bp-sm) {
+    background: url("/src/v2_common/images/blog/BlogPost_AuthorCard_568.jpg") no-repeat;
+    background-size: cover;
+  }
+  @media (min-width: $bp-md) {
+    background: url("/src/v2_common/images/blog/BlogPost_AuthorCard_768.jpg") no-repeat;
+    background-size: cover;
+    padding: 1.6rem;
+  }
+  @media (min-width: $bp-lg) {
+    background: url("/src/v2_common/images/blog/BlogPost_AuthorCard_1024.jpg") no-repeat;
+    background-size: cover;
+    padding: 1.6rem 2.4rem;
+  }
+  @media (min-width: $bp-xl) {
+    background: url("/src/v2_common/images/blog/BlogPost_AuthorCard_1344.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
+.blogPostAuthorInner {
+  display: flex;
+  flex-direction: row;
+}
+
+.blogPostAuthorImageWrapper {
+  margin-right: 0.8rem;
+  @media (min-width: $bp-sm) {
+    margin-right: 1.2rem;
+  }
+  @media (min-width: $bp-md) {
+    margin-right: 1.6rem;
+  }
+}
+
+.blogPostAuthorImage {
+  border-radius: 50%;
+  width: 4.8rem;
+  height: 4.8rem;
+  overflow: hidden;
+  box-shadow: 0 0 0 2px $color-primary-accent2;
+  @media (min-width: $bp-lg) {
+    width: 5.6rem;
+    height: 5.6rem;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+.blogPostAuthorTextWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.blogPostAuthorTitle {
+  font-family: $Source_Sans_Pro_Semibold;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: $color-black;
+  margin-bottom: 0.4rem;
+  @media (min-width: $bp-lg) {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+}
+
+.blogPostAuthorInfo {
+  font-family: $Source_Sans_Pro_Regular;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: $color-black;
+  @media (min-width: $bp-lg) {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+}

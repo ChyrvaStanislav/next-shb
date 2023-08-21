@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputFile renders should InputFile renders 1`] = `
+<DocumentFragment>
+  <section
+    class="textareaContainer"
+  >
+    <label
+      class="small_filters label"
+      for="formId-Name"
+      other=""
+    >
+      Some label
+    </label>
+    <div
+      class="fileInputWrapper"
+    >
+      <div
+        class="dragDropSection"
+        data-testid="drop-section"
+      >
+        <svg
+          class="cloud"
+          height="26px"
+          version="1.1"
+          viewBox="0 0 38 26"
+          width="38px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            fill="none"
+            fill-opacity="0.25"
+            fill-rule="evenodd"
+            id="Desktop-1344"
+            stroke="none"
+            stroke-width="1"
+          >
+            <g
+              fill="#202025"
+              fill-rule="nonzero"
+              id="cloud"
+              transform="translate(-1049.000000, -602.000000)"
+            >
+              <g
+                id="Form"
+                transform="translate(792.000000, 0.000000)"
+              >
+                <g
+                  id="File-Area"
+                  transform="translate(36.000000, 552.000000)"
+                >
+                  <g
+                    id="Shape"
+                    transform="translate(220.000000, 43.000000)"
+                  >
+                    <path
+                      d="M28.208,25.98 C26.3333333,30.4 22.5333333,33 18.1,33 C12.4,33 7.33333333,28.45 7.33333333,22.6 C3.66,22.34 1,18.7 1,15.45 C1,10.9 4.8,7 9.23333333,7 L29.5,7 C34.5666667,7 39,11.55 39,16.75 C39,22.548 34.1613333,27.202 28.208,25.98 Z M20,11 L14,17.5 L18.1659389,17.5 L18.1659389,22.674 C18.1659389,24 18.1659389,24 19.5021834,24 L20.4978166,24 C21.8340611,24 21.8340611,24 21.8340611,22.674 L21.8340611,17.5 L26,17.5 L20,11 Z"
+                      transform="translate(20.000000, 20.000000) scale(-1, 1) rotate(-180.000000) translate(-20.000000, -20.000000) "
+                    />
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </svg>
+        <p
+          class="p_body dragDropTip"
+          other=""
+        >
+          Drag and Drop here
+        </p>
+        <p
+          class="p_body dragDropOr"
+          other=""
+        >
+          or
+        </p>
+        <p
+          class="p_body acceptedTypes"
+          other=""
+        >
+          Accepted file types: .pdf, .doc
+        </p>
+        <button
+          class="button outline medium browse"
+          type="submit"
+        >
+          Upload File
+        </button>
+        <div
+          class="inputWrapper"
+        >
+          <input
+            accept=".pdf,.doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+            autocomplete="off"
+            class="input"
+            data-testid="input-file"
+            id="formId-Name"
+            multiple=""
+            name="file"
+            style="display: none;"
+            tabindex="-1"
+            type="file"
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;

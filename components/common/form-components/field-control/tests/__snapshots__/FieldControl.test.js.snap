@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FieldControl renders should FieldControl renders 1`] = `
+<DocumentFragment>
+  <section
+    class="textareaContainer someClass"
+  >
+    <label
+      class="small_filters label"
+      for="Form Id-someName"
+      other=""
+    >
+      Some label
+    </label>
+    <input
+      name="children"
+      value="children"
+    />
+  </section>
+</DocumentFragment>
+`;

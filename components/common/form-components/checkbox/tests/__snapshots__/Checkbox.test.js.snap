@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Checkbox renders should Checkbox renders 1`] = `
+<DocumentFragment>
+  <div>
+    <section
+      class="row"
+    >
+      <label
+        class="checkboxContainer"
+      >
+        <input
+          class="checkboxHidden"
+          data-testid="checkbox"
+          id="formId-someId"
+          name="Name"
+          type="checkbox"
+          value="false"
+        />
+        <span
+          class="checkbox"
+          for="formId-someId"
+        />
+        <span
+          class="inputLabel"
+        >
+          Some label
+        </span>
+      </label>
+    </section>
+  </div>
+</DocumentFragment>
+`;

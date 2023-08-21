@@ -1,0 +1,94 @@
+@import "/styles/variables";
+
+.userComponent {
+  display: flex;
+  margin-left: 0.4rem;
+  position: relative;
+  flex-direction: row;
+  align-self: normal;
+  order: 4;
+
+  @media (min-width: $bp-lg) {
+    margin-left: 0;
+  }
+
+  .bg {
+    display: flex;
+    align-items: center;
+    padding: 0.3rem 1.2rem;
+
+    &.active {
+      background-color: $color-bg-darkbrown;
+    }
+  }
+
+  .btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    padding: 0;
+    border: 0.1rem;
+    border-radius: 50%;
+    outline: none;
+    font: inherit;
+    cursor: pointer;
+    color: $color-white;
+    background: $color-white-a15;
+
+    .avatar {
+      width: 4rem;
+      border-radius: 50%;
+    }
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    min-width: 17.2rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateY(100%);
+    background-color: $color-bg-darkbrown;
+  }
+
+  .link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 1rem 1.2rem 1rem 1.6rem;
+    margin-right: 0.4rem;
+    color: $color-white;
+    font-family: $Source_Sans_Pro_Regular;
+    font-size: 1.8rem;
+    letter-spacing: 0;
+    line-height: 2.8rem;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-primary-hover;
+
+      & .icon {
+        path[data-fill],
+        g[data-fill] {
+          fill: $color-primary-hover;
+        }
+      }
+    }
+  }
+
+  .icon {
+    path[data-fill],
+    g[data-fill] {
+      fill: $color-white-a65;
+    }
+  }
+
+  .logoutIcon {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+}
