@@ -1,7 +1,6 @@
-@import 'variables',
-'fonts',
-'reset',
-'styles';
+@import '../styles/variables',
+'../styles/fonts',
+'../styles/reset';
 
 html {
   font-size: 62.5%;
