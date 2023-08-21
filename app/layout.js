@@ -16,6 +16,10 @@ const RootLayout = async ({ children }) =>  {
 
   return (
     <html lang="en">
+    <head>
+      <title>Test Next.js</title>
+      <meta name="robots" content="noindex nofollow" />
+    </head>
     <body className={inter.className}>
       <Header
         categories={data?.categoryContainer?.categories}
