@@ -1,0 +1,27 @@
+@import "../../../styles/variables";
+
+.content_loader {
+  display: block;
+
+  &_color {
+    &_grey {
+      stop-color: $color-preloaders;
+      stop-opacity: 1;
+
+      &_flow {
+        stop-color: $color-preloaders;
+        stop-opacity: 0.5
+      }
+    }
+
+    &_dark_grey {
+      stop-color: $color-preloaders;
+      stop-opacity: 1;
+
+      &_flow {
+        stop-color: $color-preloaders;
+        stop-opacity: 0.5
+      }
+    }
+  }
+}

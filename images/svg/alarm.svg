@@ -1,0 +1,9 @@
+<svg width="64px" height="64px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" xmlns:xlink= "http://www.w3.org/1999/xlink">
+  <g id="Symbols" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
+    <g id="Alarm">
+      <circle id="Oval" strokeOpacity="0.45" stroke="#FFFFFF" strokeWidth="5" cx="32" cy="32" r="29.5" />
+      <rect id="Rectangle" fillOpacity="0.45" fill="#FFFFFF" x="29" y="17" width="5" height="20" rx="1" />
+      <rect id="Rectangle-Copy-5" fillOpacity="0.45" fill="#FFFFFF" x="29" y="42" width="5" height="5" rx="1" />
+    </g>
+  </g>
+</svg>

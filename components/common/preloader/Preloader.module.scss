@@ -1,0 +1,99 @@
+@import "../../../styles/variables";
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.general {
+  background-color: $color-bg-primary;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  &.fixed {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+  }
+
+  &.fit {
+    display: flex;
+    flex: 1 1 auto; 
+  }
+}
+
+.small {
+  width: 40px;
+  height: 8px;
+}
+
+.medium {
+  width: 60px;
+  height: 12px;
+}
+
+.large {
+  width: 100px;
+  height: 20px;
+}
+
+.circle {
+  animation: bounce 1.5s linear infinite;
+  width: 20%;
+  transform: scale(0);
+  opacity: 0;
+  border-radius: 50%;
+  height: 100%;
+
+  &:first-child {
+    animation-delay: 0s;
+  }
+
+  &:nth-child(2) {
+    animation-delay: 0.15s;
+  }
+
+  &:last-child {
+    animation-delay: 0.3s;
+    margin-right: 0;
+  }
+}
+
+.green {
+  background-color: $color-primary-accent;
+}
+
+.white {
+  background-color: $color-white;
+}
+
+.grey {
+  background-color: $color-secondary;
+}
+
+@keyframes bounce {
+  10% {
+    transform: scale(0.3);
+    opacity: 0.3;
+  }
+
+  20% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  30% {
+    transform: scale(0.3);
+    opacity: 0.3;
+  }
+
+  40% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}

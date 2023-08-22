@@ -1,0 +1,57 @@
+@import "../../../styles/variables";
+
+.content_loader {
+  display: block;
+
+  &_color {
+    &_light_grey {
+      stop-color: $color-preloaders-light;
+      stop-opacity: 1;
+
+      &_flow {
+        stop-color: $color-preloaders-light;
+        stop-opacity: 0.5
+      }
+    }
+
+    &_grey {
+      stop-color: $color-preloaders;
+      stop-opacity: 1;
+
+      &_flow {
+        stop-color: $color-preloaders;
+        stop-opacity: 0.5
+      }
+    }
+
+    &_dark_grey {
+      stop-color: $color-black-a15;
+      stop-opacity: 1;
+
+      &_flow {
+        stop-color: $color-black-a15;
+        stop-opacity: 0.5
+      }
+    }
+
+    &_dark_grey2 {
+      stop-color: $color-black-a10;
+      stop-opacity: 1;
+
+      &_flow {
+        stop-color: $color-black-a10;
+        stop-opacity: 0.5
+      }
+    }
+
+    &_dark_grey3 {
+      stop-color: $color-black-a15;
+      stop-opacity: 1;
+
+      &_flow {
+        stop-color: $color-black-a15;
+        stop-opacity: 0.5
+      }
+    }
+  }
+}

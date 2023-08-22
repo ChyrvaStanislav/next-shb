@@ -1,0 +1,27 @@
+<svg viewBox="0 0 219 440" xmlns="http://www.w3.org/2000/svg" xmlns:xlink= "http://www.w3.org/1999/xlink">
+  <defs>
+    <filter x="-156.3%" y="-28.7%" width="415.9%" height="135.7%" filterUnits="objectBoundingBox" id="cord_a">
+      <feOffset dx="10" dy="10" in="SourceAlpha" result="shadowOffsetOuter1" />
+      <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1" />
+      <feColorMatrix values="0 0 0 0 0.141176471 0 0 0 0 0.164705882 0 0 0 0 0.2 0 0 0 0.05 0" in="shadowBlurOuter1" result="shadowMatrixOuter1" />
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter x="-1372.7%" y="-44.6%" width="2845.5%" height="190.4%" filterUnits="objectBoundingBox" id="cord_b">
+      <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1" />
+      <feGaussianBlur stdDeviation="50" in="shadowOffsetOuter1" result="shadowBlurOuter1" />
+      <feColorMatrix values="0 0 0 0 0.141176471 0 0 0 0 0.164705882 0 0 0 0 0.2 0 0 0 0.05 0" in="shadowBlurOuter1" />
+    </filter>
+    <path id="cord_c" d="M27 0h11v334H27z" />
+  </defs>
+  <g filter="url(#cord_a)" transform="translate(72 -4)" fill="none" fillRule="evenodd">
+    <use fill="#000" filter="url(#cord_b)" xlinkHref="#cord_c" />
+    <use fill="#FEFEFE" xlinkHref="#cord_c" />
+    <rect fill="#4E545C" transform="scale(-1 1) rotate(-1 0 2278.925)" x="14.264" y="400.033" width="4" height="30.341" rx="1" />
+    <path d="M46.058 400.035A2 2 0 0044.024 402l-.478 27.336a1 1 0 00.983 1.018l2 .035a1 1 0 001.017-.983l.477-27.336a2 2 0 00-1.965-2.035z" fill="#4E545C" />
+    <path d="M53.888 364.378l-44.24-.772a2 2 0 00-2.028 2.166l.17 2.044a2 2 0 001.958 1.834l43.83.765a2 2 0 002.02-1.765l.242-2.037a2 2 0 00-1.952-2.235z" fill="#DBDDE0" />
+    <path d="M50.817 367.95l-38.224-.667a4 4 0 00-3.987 3.188l-6.83 32.985a5 5 0 004.81 6.013l48.763.851a5 5 0 005.016-5.841l-5.675-33.204a4 4 0 00-3.873-3.325zM44.561 365.216l-25.586-.447a4 4 0 01-3.856-4.763l5.553-28.534a5 5 0 014.995-4.044l13.51.236a5 5 0 014.851 4.216l4.554 28.71a4 4 0 01-4.02 4.626z" fill="#FEFEFE" />
+  </g>
+</svg>

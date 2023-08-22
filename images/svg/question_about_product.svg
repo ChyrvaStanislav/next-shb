@@ -1,0 +1,234 @@
+<svg viewBox="0 0 1093 1124" xmlns="http://www.w3.org/2000/svg" xmlns:xlink= "http://www.w3.org/1999/xlink">
+  <defs>
+    <linearGradient x1="171.215%" y1="634.605%" x2="426.147%" y2="99.997%" id="question_a">
+      <stop stopColor="#99A6F2" offset="0%" />
+      <stop stopColor="#3C4785" offset="100%" />
+    </linearGradient>
+    <linearGradient x1="47.628%" y1="45.552%" x2="27.121%" y2="53.558%" id="question_b">
+      <stop stopColor="#5563AB" offset="0%" />
+      <stop stopColor="#162053" offset="100%" />
+    </linearGradient>
+    <linearGradient x1="28.738%" y1="39.826%" x2="48.771%" y2="36.447%" id="question_c">
+      <stop stopColor="#515C97" offset="0%" />
+      <stop stopColor="#6F7FCE" offset="100%" />
+    </linearGradient>
+    <linearGradient x1="50%" y1="0%" x2="50%" y2="98.804%" id="question_e">
+      <stop stopColor="#1DA488" offset="0%" />
+      <stop stopColor="#4AEDCB" offset="100%" />
+    </linearGradient>
+    <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="question_g">
+      <stop stopColor="#1DA488" offset="0%" />
+      <stop stopColor="#4AEDCB" offset="98.804%" />
+    </linearGradient>
+    <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="question_k">
+      <stop stopColor="#1DA488" offset="0%" />
+      <stop stopColor="#4AEDCB" offset="98.804%" />
+    </linearGradient>
+    <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="question_m">
+      <stop stopColor="#1DA488" offset="0%" />
+      <stop stopColor="#4AEDCB" offset="98.804%" />
+    </linearGradient>
+    <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="question_o">
+      <stop stopColor="#v1DA488" offset="0%" />
+      <stop stopColor="#4AEDCB" offset="98.804%" />
+    </linearGradient>
+    <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="question_q">
+      <stop stopColor="#1DA488" offset="0%" />
+      <stop stopColor="#4AEDCB" offset="98.804%" />
+    </linearGradient>
+    <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="question_s">
+      <stop stopColor="#1DA488" offset="0%" />
+      <stop stopColor="#4AEDCB" offset="98.804%" />
+    </linearGradient>
+    <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="question_u">
+      <stop stopColor="#1DA488" offset="0%" />
+      <stop stopColor="#4AEDCB" offset="98.804%" />
+    </linearGradient>
+    <linearGradient x1="50%" y1="0%" x2="50%" y2="98.804%" id="question_x">
+      <stop stopColor="#5239C5" offset="0%" />
+      <stop stopColor="#4AEDCB" offset="100%" />
+    </linearGradient>
+    <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="question_z">
+      <stop stopColor="#1DA488" offset="0%" />
+      <stop stopColor="#4AEDCB" offset="98.804%" />
+    </linearGradient>
+    <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="question_B">
+      <stop stopColor="#1DA488" offset="0%" />
+      <stop stopColor="#4AEDCB" offset="98.804%" />
+    </linearGradient>
+    <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="question_D">
+      <stop stopColor="#1DA488" offset="0%" />
+      <stop stopColor="#4AEDCB" offset="98.804%" />
+    </linearGradient>
+    <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="question_G">
+      <stop stopColor="#1DA488" offset="0%" />
+      <stop stopColor="#4AEDCB" offset="98.804%" />
+    </linearGradient>
+    <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="question_I">
+      <stop stopColor="#1DA488" offset="0%" />
+      <stop stopColor="#4AEDCB" offset="98.804%" />
+    </linearGradient>
+    <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="question_K">
+      <stop stopColor="#1DA488" offset="0%" />
+      <stop stopColor="#4AEDCB" offset="98.804%" />
+    </linearGradient>
+    <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="question_M">
+      <stop stopColor="#1DA488" offset="0%" />
+      <stop stopColor="#4AEDCB" offset="98.804%" />
+    </linearGradient>
+    <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="question_O">
+      <stop stopColor="#1DA488" offset="0%" />
+      <stop stopColor="#4AEDCB" offset="98.804%" />
+    </linearGradient>
+    <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="question_Q">
+      <stop stopColor="#1DA488" offset="0%" />
+      <stop stopColor="#4AEDCB" offset="98.804%" />
+    </linearGradient>
+    <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="question_T">
+      <stop stopColor="#1DA488" offset="0%" />
+      <stop stopColor="#4AEDCB" offset="98.804%" />
+    </linearGradient>
+    <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="question_W">
+      <stop stopColor="#1DA488" offset="0%" />
+      <stop stopColor="#4AEDCB" offset="98.804%" />
+    </linearGradient>
+    <path d="M528.718 335.867c0-.354.288-.642.642-.642a.643.643 0 010 1.284.638.638 0 01-.642-.642z" id="question_d" />
+    <path d="M569.66 288.163a1.414 1.414 0 112.827-.002 1.414 1.414 0 01-2.828.002z" id="question_n" />
+    <path d="M277.857 93.78c0-.968.79-1.76 1.758-1.76s1.759.792 1.759 1.76-.791 1.76-1.759 1.76a1.764 1.764 0 01-1.758-1.76z" id="question_p" />
+    <path d="M221.44 184.851a.977.977 0 010 1.955" id="question_t" />
+    <path d="M108 369.29c0-.717.586-1.303 1.303-1.303.716 0 1.302.586 1.302 1.303s-.586 1.303-1.302 1.303A1.307 1.307 0 01108 369.29z" id="question_v" />
+    <path d="M0 370.992a1 1 0 011.005-1.005 1 1 0 011.005 1.005 1 1 0 01-1.005 1.005A1.013 1.013 0 010 370.992z" id="question_w" />
+    <path d="M225 444.995c0-1.108.903-2.01 2.01-2.01 1.107 0 2.01.902 2.01 2.01 0 1.107-.903 2.01-2.01 2.01a2.008 2.008 0 01-2.01-2.01z" id="question_y" />
+    <path d="M26 401.99a1 1 0 011.005-1.004 1 1 0 011.005 1.005 1 1 0 01-1.005 1.005A1 1 0 0126 401.991z" id="question_C" />
+    <path d="M153 385.085a1.1 1.1 0 011.098-1.099 1.1 1.1 0 011.098 1.099 1.1 1.1 0 01-1.098 1.098 1.1 1.1 0 01-1.098-1.098z" id="question_E" />
+    <path d="M10.87 154.292c0-.893.717-1.61 1.61-1.61a1.61 1.61 0 11-1.61 1.61z" id="question_F" />
+    <path d="M170.161 2.69a2.371 2.371 0 012.373-2.374 2.371 2.371 0 012.373 2.374 2.371 2.371 0 01-2.373 2.374 2.383 2.383 0 01-2.373-2.374z" id="question_H" />
+    <path d="M330.653 79.51a1.787 1.787 0 113.574 0 1.787 1.787 0 01-3.574 0z" id="question_J" />
+    <path d="M314.732 3.937a1.507 1.507 0 113.015 0 1.507 1.507 0 01-3.015 0z" id="question_L" />
+    <path d="M310.461 11.29a.75.75 0 01.754-.753.75.75 0 01.753.754.75.75 0 01-.753.754.75.75 0 01-.754-.754z" id="question_N" />
+    <path d="M149 341.794c0-.996.81-1.806 1.805-1.806.996 0 1.805.81 1.805 1.806s-.81 1.805-1.805 1.805c-.995 0-1.805-.81-1.805-1.805z" id="question_P" />
+    <path d="M60 380.481a2.494 2.494 0 114.989 0 2.494 2.494 0 01-4.989 0z" id="question_R" />
+    <path d="M382.74 383.163a1.37 1.37 0 011.368-1.368 1.37 1.37 0 011.368 1.368 1.37 1.37 0 01-1.368 1.368 1.358 1.358 0 01-1.368-1.368z" id="question_S" />
+    <path d="M55.32 543.65a.5.5 0 01.502-.502.5.5 0 01.503.503.5.5 0 01-.503.502.5.5 0 01-.502-.502z" id="question_V" />
+    <circle id="question_f" cx="504.487" cy="364.331" r="1" />
+    <circle id="question_h" cx="369.985" cy="404.068" r="1" />
+    <circle id="question_i" cx="225.94" cy="355.927" r="1" />
+    <circle id="question_j" cx="569.771" cy="403.128" r="1.303" />
+    <circle id="question_l" cx="412.499" cy="294.818" r="1.07" />
+    <circle id="question_r" cx="314.732" cy="126.768" r="1.191" />
+    <ellipse id="question_A" cx="53.391" cy="429.377" rx="2.391" ry="2.392" />
+    <ellipse id="question_U" cx="143.889" cy="425.874" rx="1.889" ry="1.89" />
+  </defs>
+  <g fillRule="nonzero" fill="none">
+    <path d="M11.665 27.205a.479.479 0 01-.34-.818l15.052-15.051c.19-.19.494-.19.68 0 .19.19.19.494 0 .679l-15.052 15.05a.479.479 0 01-.34.14zM4.65 41.047L41.043 4.654a.481.481 0 000-.684.481.481 0 00-.684 0L3.965 40.362a.479.479 0 00.34.818.445.445 0 00.344-.133zM2.005 50.31L50.307 2.005a.475.475 0 000-.68.481.481 0 00-.684 0L1.321 49.633a.481.481 0 10.684.679zM.96 57.98L57.977.965a.481.481 0 000-.684.481.481 0 00-.684 0L.276 57.302a.481.481 0 10.685.678zm-.14 6.758L64.742.827a.481.481 0 000-.684.481.481 0 00-.684 0L.143 64.06a.481.481 0 10.679.68zm.515 6.111L70.847 1.341a.481.481 0 000-.684.481.481 0 00-.684 0L.652 70.171a.481.481 0 10.684.68zm1.019 5.607l74.1-74.097a.481.481 0 000-.684.481.481 0 00-.685 0L1.67 75.773a.48.48 0 00.34.818.459.459 0 00.345-.134zm1.435 5.185L81.645 3.79a.481.481 0 000-.684.475.475 0 00-.68 0L3.106 80.963a.48.48 0 00.34.818.46.46 0 00.345-.14zm1.785 4.84L86.48 5.58a.481.481 0 000-.684.481.481 0 00-.684 0L4.891 85.798a.481.481 0 00.34.823.5.5 0 00.344-.139zM7.679 91L90.997 7.684a.475.475 0 000-.68.481.481 0 00-.684 0L6.995 90.32a.479.479 0 00.34.818.482.482 0 00.344-.14zm2.412 4.212l85.119-85.12a.481.481 0 000-.684.475.475 0 00-.68 0L9.408 94.527a.481.481 0 00.34.823.5.5 0 00.344-.139zm2.66 3.961l86.42-86.417a.481.481 0 000-.684.481.481 0 00-.685 0l-86.42 86.417a.481.481 0 00.34.823.482.482 0 00.345-.139zm2.952 3.673l87.14-87.137a.481.481 0 000-.684.481.481 0 00-.684 0L15.02 102.16a.481.481 0 00.34.823.5.5 0 00.344-.14zm3.174 3.446l87.418-87.414a.475.475 0 000-.68.481.481 0 00-.684 0l-87.418 87.415a.48.48 0 00.34.818.46.46 0 00.344-.139zm3.447 3.174l87.14-87.137a.481.481 0 000-.684.481.481 0 00-.684 0l-87.14 87.137a.481.481 0 00.34.823.445.445 0 00.344-.139zm3.673 2.953L112.417 26a.475.475 0 000-.68.481.481 0 00-.685 0l-86.42 86.418a.481.481 0 10.685.679zm3.96 2.664l85.124-85.12a.481.481 0 000-.685.481.481 0 00-.684 0l-85.118 85.12a.48.48 0 00.34.818.455.455 0 00.339-.133zm4.214 2.407l83.317-83.315a.475.475 0 000-.679.481.481 0 00-.684 0L33.492 116.81a.481.481 0 10.679.68zm4.516 2.104l80.905-80.902a.475.475 0 000-.68.481.481 0 00-.684 0l-80.9 80.903a.481.481 0 10.679.68zm4.84 1.785l77.855-77.852a.475.475 0 000-.679.481.481 0 00-.684 0l-77.855 77.852a.48.48 0 00.34.818.46.46 0 00.345-.139zm5.186 1.435l74.1-74.097a.475.475 0 000-.679.486.486 0 00-.685 0l-74.094 74.097a.481.481 0 10.679.68zm5.607 1.019l69.516-69.514a.481.481 0 000-.684.475.475 0 00-.679 0l-69.521 69.519a.481.481 0 10.684.679zm6.11.514l63.915-63.912a.481.481 0 000-.684.481.481 0 00-.684 0l-63.914 63.912a.481.481 0 00.34.823.5.5 0 00.344-.139zm6.76-.139l57.022-57.02a.475.475 0 000-.678.481.481 0 00-.684 0l-57.022 57.02a.481.481 0 10.684.678zm7.67-1.044l48.307-48.306a.481.481 0 000-.684.481.481 0 00-.684 0l-48.307 48.306a.481.481 0 00.34.823.48.48 0 00.344-.139zm9.264-2.644l36.394-36.393a.475.475 0 000-.679.481.481 0 00-.684 0L83.44 119.84a.479.479 0 00.34.818.443.443 0 00.344-.139zm13.982-7.36l15.051-15.052a.481.481 0 000-.684.481.481 0 00-.684 0l-15.051 15.051a.479.479 0 00.34.818.422.422 0 00.344-.134z" opacity=".8" transform="rotate(90 -84.403 493.301)" fill="url(#question_a)" />
+    <path d="M204.524 100.263c16.035 8.667 25.544 28.006 22.633 46.001-2.688 16.57-18.712 40.817 1.64 53.1 9.407 5.672 21.084 5.295 32.069 5.438 10.985.143 23.019 1.457 30.685 9.33 9.152 9.4 8.124 23.025 10.313 34.94 2.658 14.482 10.253 26.296 22.49 34.708 24.037 16.539 55.282 13.942 81.13 26 37.955 17.7 32.855 61.39 22.054 95.404-10.893 34.31-37.923 67.448-39.958 103.988-1.273 22.852 21.003 40.003 41.823 42.722 30.593 4.003 57.103-17.302 87.065-16.314 18.59.612 36.142 17.12 55.363 12.762 19.832-4.491 32.14-24.716 52.461-28.392 23.294-4.216 45.539 18.433 46.323 42.1.784 23.658-15.24 45.39-35.418 57.763-17.908 10.989-38.768 15.928-59.22 20.714L442.1 671.84c-16.32 3.818-33.2 7.647-49.672 4.622-19.69-3.615-36.427-16.59-55.628-22.262-31.733-9.37-65.31 2.086-97.959 7.443-32.65 5.356-72.354 1.231-89.153-27.284-12.39-21.04-7.484-47.946 1.333-70.707 8.806-22.772 21.277-44.769 23.323-69.098 3.46-41.143-23.07-77.898-45.57-112.503-22.5-34.605-42.629-77.938-26.024-115.74 11.789-26.835 40.752-46.49 42.381-75.749.784-14.145-5.243-27.73-7.005-41.784-4.633-36.652 31.661-67.295 66.398-48.516z" fill="url(#question_b)" transform="rotate(-81 570.587 392.584)" />
+    <path d="M206.7 238.76c13.464 7.315 21.449 23.635 19.004 38.822-2.257 13.983-15.713 34.445 1.377 44.81 7.9 4.788 17.705 4.47 26.93 4.59 9.224.12 19.329 1.23 25.766 7.873 7.686 7.932 6.823 19.432 8.66 29.487 2.232 12.221 8.61 22.19 18.886 29.29 20.184 13.957 46.421 11.766 68.127 21.942 31.871 14.937 27.588 51.807 18.518 80.512-9.147 28.954-31.844 56.92-33.554 87.756-1.068 19.286 17.637 33.759 35.12 36.054 25.69 3.378 47.951-14.601 73.111-13.767 15.61.515 30.35 14.447 46.49 10.769 16.653-3.79 26.989-20.858 44.052-23.96 19.56-3.559 38.24 15.555 38.899 35.529.658 19.964-12.798 38.304-29.742 48.746-15.037 9.274-32.554 13.442-49.729 17.48-37.47 8.81-74.949 17.618-112.419 26.427-13.704 3.223-27.878 6.454-41.71 3.901-16.534-3.051-30.589-14-46.713-18.788-26.647-7.907-54.841 1.762-82.258 6.282-27.417 4.52-60.758 1.04-74.864-23.025-10.404-17.756-6.284-40.462 1.12-59.67 7.394-19.217 17.866-37.781 19.584-58.313 2.907-34.721-19.372-65.738-38.266-94.942-18.894-29.204-35.795-65.773-21.852-97.675 9.899-22.646 34.22-39.232 35.588-63.924.658-11.937-4.403-23.402-5.882-35.263-3.89-30.93 26.587-56.79 55.756-40.942z" fill="url(#question_c)" opacity=".598" transform="rotate(-77 584.838 413.97)" />
+    <g>
+      <g transform="translate(234.9 238.719)">
+        <use fill="#5864A6" xlinkHref="#question_d" />
+        <use fill="url(#question_e)" xlinkHref="#question_d" />
+      </g>
+      <g transform="translate(234.9 238.719)">
+        <use fill="#5864A6" xlinkHref="#question_f" />
+        <use fill="url(#question_g)" xlinkHref="#question_f" />
+      </g>
+      <path d="M473.611 612.842a1.64 1.64 0 011.638-1.638 1.64 1.64 0 011.637 1.638 1.64 1.64 0 01-1.637 1.638 1.646 1.646 0 01-1.638-1.638z" fill="#D2555C" />
+      <g transform="translate(234.9 238.719)">
+        <use fill="#5864A6" xlinkHref="#question_h" />
+        <use fill="url(#question_g)" xlinkHref="#question_h" />
+      </g>
+      <g transform="translate(234.9 238.719)">
+        <use fill="#5864A6" xlinkHref="#question_i" />
+        <use fill="url(#question_g)" xlinkHref="#question_i" />
+      </g>
+      <g transform="translate(234.9 238.719)">
+        <use fill="#5864A6" xlinkHref="#question_j" />
+        <use fill="url(#question_k)" xlinkHref="#question_j" />
+      </g>
+      <g transform="translate(234.9 238.719)">
+        <use fill="#5864A6" xlinkHref="#question_l" />
+        <use fill="url(#question_m)" xlinkHref="#question_l" />
+      </g>
+      <g transform="translate(234.9 238.719)">
+        <use fill="#5864A6" xlinkHref="#question_n" />
+        <use fill="url(#question_o)" xlinkHref="#question_n" />
+      </g>
+      <g transform="translate(234.9 238.719)">
+        <use fill="#5864A6" xlinkHref="#question_p" />
+        <use fill="url(#question_q)" xlinkHref="#question_p" />
+      </g>
+      <g transform="translate(234.9 238.719)">
+        <use fill="#5864A6" xlinkHref="#question_r" />
+        <use fill="url(#question_s)" xlinkHref="#question_r" />
+      </g>
+      <g transform="translate(234.9 238.719)">
+        <use fill="#5864A6" xlinkHref="#question_t" />
+        <use fill="url(#question_u)" xlinkHref="#question_t" />
+      </g>
+      <g transform="translate(234.9 238.719)">
+        <use fill="#5864A6" xlinkHref="#question_v" />
+        <use fill="url(#question_k)" xlinkHref="#question_v" />
+      </g>
+      <g transform="translate(234.9 238.719)">
+        <use fill="#5864A6" xlinkHref="#question_w" />
+        <use fill="url(#question_x)" xlinkHref="#question_w" />
+      </g>
+      <g transform="translate(234.9 238.719)">
+        <use fill="#5864A6" xlinkHref="#question_y" />
+        <use fill="url(#question_z)" xlinkHref="#question_y" />
+      </g>
+      <g transform="translate(234.9 238.719)">
+        <use fill="#5864A6" xlinkHref="#question_A" />
+        <use fill="url(#question_B)" xlinkHref="#question_A" />
+      </g>
+      <g transform="translate(234.9 238.719)">
+        <use fill="#5864A6" xlinkHref="#question_C" />
+        <use fill="url(#question_D)" xlinkHref="#question_C" />
+      </g>
+      <g transform="translate(234.9 238.719)">
+        <use fill="#5864A6" xlinkHref="#question_E" />
+        <use fill="#C57942" xlinkHref="#question_E" />
+      </g>
+      <g transform="translate(234.9 238.719)">
+        <use fill="#5864A6" xlinkHref="#question_F" />
+        <use fill="url(#question_G)" xlinkHref="#question_F" />
+      </g>
+      <g transform="translate(234.9 238.719)">
+        <use fill="#C77A42" xlinkHref="#question_H" />
+        <use fill="url(#question_I)" xlinkHref="#question_H" />
+      </g>
+      <g transform="translate(234.9 238.719)">
+        <use fill="#5864A6" xlinkHref="#question_J" />
+        <use fill="url(#question_K)" xlinkHref="#question_J" />
+      </g>
+      <g transform="translate(234.9 238.719)">
+        <use fill="#5864A6" xlinkHref="#question_L" />
+        <use fill="url(#question_M)" xlinkHref="#question_L" />
+      </g>
+      <g transform="translate(234.9 238.719)">
+        <use fill="#5864A6" xlinkHref="#question_N" />
+        <use fill="url(#question_O)" xlinkHref="#question_N" />
+      </g>
+      <g transform="translate(234.9 238.719)">
+        <use fill="#5864A6" xlinkHref="#question_P" />
+        <use fill="url(#question_Q)" xlinkHref="#question_P" />
+      </g>
+      <g transform="translate(234.9 238.719)">
+        <use fill="#5864A6" xlinkHref="#question_R" />
+        <use fill="#9F3C41" xlinkHref="#question_R" />
+      </g>
+      <g transform="translate(234.9 238.719)">
+        <use fill="#5864A6" xlinkHref="#question_S" />
+        <use fill="url(#question_T)" xlinkHref="#question_S" />
+      </g>
+      <g transform="translate(234.9 238.719)">
+        <use fill="#5864A6" xlinkHref="#question_U" />
+        <use fill="#FFAA63" xlinkHref="#question_U" />
+      </g>
+      <g transform="translate(234.9 238.719)">
+        <use fill="#5864A6" xlinkHref="#question_V" />
+        <use fill="url(#question_W)" xlinkHref="#question_V" />
+      </g>
+    </g>
+  </g>
+</svg>

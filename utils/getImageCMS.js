@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export const getImageCMS = (asset, queryParams = '') => {
+export const getImageCMS = (asset, queryParams = '?maxW=300&qlt=80&fmt=webp&bg=rgb(255,255,255)') => {
   if (!asset) {
     return undefined;
   }

@@ -7,6 +7,7 @@ import { getImageCMS } from '@/utils/getImageCMS';
 import { Button } from '@/components/html';
 // import ShortSolutionsRequestHandler from '@/components/common/forms/short-solutions-request';
 import styles from './BlogPostAdvertising.module.scss';
+import Image from "next/image";
 
 const BlogPostAdvertising = ({ data }) => {
   const {
@@ -82,7 +83,7 @@ const BlogPostAdvertising = ({ data }) => {
                   media="(min-width: 568px) and (max-width: 1023px)"
                   src={getImageCMS(imageForTablet)}
                 />
-                <img
+                <Image
                   src={getImageCMS(imageForDesktop)}
                   alt="Blog Post Advertising"
                   width="413"
