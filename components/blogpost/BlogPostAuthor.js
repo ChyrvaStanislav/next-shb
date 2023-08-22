@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { getImageCMS } from 'v2_common/utils/getImageCMS';
+import { getImageCMS } from '@/utils/getImageCMS';
 import styles from './BlogPostAuthor.module.scss';
+import Image from "next/image";
 
 const BlogPostAuthor = ({ authorCard }) => {
   const authorImage = getImageCMS(authorCard?.avatar);
@@ -20,7 +21,7 @@ const BlogPostAuthor = ({ authorCard }) => {
       <div className={styles.blogPostAuthorInner}>
         <div className={styles.blogPostAuthorImageWrapper}>
           <div className={styles.blogPostAuthorImage}>
-            <img src={authorImage} alt={authorCard?.name} width={48} height={48} />
+            <Image src={authorImage} alt={authorCard?.name} width={48} height={48} />
           </div>
         </div>
         <div className={styles.blogPostAuthorTextWrapper}>

@@ -8,10 +8,15 @@ import { getImageCMS, getAltTextFromName } from "@/utils/getImageCMS";
 import styles from '@/components/blogpost/BlogPostBody.module.scss';
 import { Typography } from "@/components/html";
 import classNames from "classnames";
+import ThematicContent from "@/components/blogpost/ThematicContent";
+import Subscription from "@/components/blogpost/Subscription";
+import BlogPostAuthor from "@/components/blogpost/BlogPostAuthor";
+import ShareBlock from "@/components/common/share";
 
 const BlogPost = async ({ params }) => {
 
   const data = await new Client().getByKey(params.key)
+  console.log(data)
 
   const {
     title,
@@ -90,8 +95,18 @@ const BlogPost = async ({ params }) => {
           <BlogPostContent
             content={content}
           />
-        </div>
 
+          <>
+            <BlogPostAuthor authorCard={authorCard} />
+            <div className={classNames({ [styles.shareBlockMargin]: true })}>
+              <ShareBlock
+                title={title}
+              />
+            </div>
+          </>
+
+          <Subscription zones={data?.body?.globalVariables?.forbiddenZones} />
+        </div>
       </section>
     </div>
   )

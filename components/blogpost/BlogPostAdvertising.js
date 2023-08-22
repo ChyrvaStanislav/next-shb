@@ -104,7 +104,6 @@ const BlogPostAdvertising = ({ data }) => {
                 <Image
                   src={getImageCMS(imageForDesktop)}
                   alt="Blog Post Advertising"
-                  fill={true}
                   width={300}
                   height={200}
                 />

@@ -5,6 +5,7 @@ import classNames from 'classnames';
 import styles from './ThematicContent.module.scss';
 import getPostTypeAndDetails from '../blog/utils';
 import ThematicTagsContainer from './ThematicTagsContainer';
+import Image from "next/image";
 
 const ThematicContentPost = ({ post }) => {
   const {
@@ -35,7 +36,7 @@ const ThematicContentPost = ({ post }) => {
           >
             <a rel="noopener noreferrer" href={linkSrc}>
               <div className={styles.thematicContentPostsItemImageInner}>
-                <img
+                <Image
                   src={getImageCMS(image) || logoSrc || ('/src/v2_common/images/thematic-default.jpg')}
                   alt={imageAlt || getAltTextFromName(image?.name) || logoAlt}
                   width="951"
