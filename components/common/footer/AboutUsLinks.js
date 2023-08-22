@@ -1,3 +1,5 @@
+"use client"
+
 import React, { useContext } from 'react';
 import Link from 'next/link';
 import classNames from 'classnames';

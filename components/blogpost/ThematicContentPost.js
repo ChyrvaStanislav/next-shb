@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { getAltTextFromName, getImageCMS } from 'v2_common/utils/getImageCMS';
+import { getAltTextFromName, getImageCMS } from '@/utils/getImageCMS';
 import classNames from 'classnames';
 import styles from './ThematicContent.module.scss';
 import getPostTypeAndDetails from '../blog/utils';

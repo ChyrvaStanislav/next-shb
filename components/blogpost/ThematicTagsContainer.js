@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import React, { useEffect, useRef, useState } from 'react';
-import { debounce } from 'lodash';
+import debounce from 'lodash.debounce';
 import styles from './ThematicContent.module.scss';
 import TagChip from '../common/tag-chip';
 

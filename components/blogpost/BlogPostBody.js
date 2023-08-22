@@ -124,7 +124,7 @@ const BlogPostBody = ({
             )}
             {/*
             Using title here as a simple content update flag
-            (used in case of search another blog from blog pages to change content according to the new URL)
+            (used in case of search another blog from blog pages-components to change content according to the new URL)
             */}
             <BlogPostContent
               content={useMemo(() => updatedContent, [title])}

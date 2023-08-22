@@ -1,13 +1,15 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import { Typography } from '../../html';
+import { Typography } from '@/components/html';
 import Link from 'next/link';
-import { ScrollToTopContext } from '../scroll-to-top';
-import { SolutionsHubLogo, Checked, LinkedInIcon } from '../../../../v2_common/svg';
-import sortingQueriesConstants from '../../../../v2_common/constants/sortingQueries';
+// import { ScrollToTopContext } from '../scroll-to-top';
+import { SolutionsHubLogo, Checked } from '@/svgComponents';
+import LinkedInIcon from '@/images/svg/socials/linkedin_light.svg';
+import sortingQueriesConstants from '@/constants/sortingQueries';
 import AboutUsLinks from './AboutUsLinks';
 import styles from './styles.module.scss';
+import Image from "next/image";
 
 const Footer = (props) => {
   const {
@@ -18,7 +20,7 @@ const Footer = (props) => {
     assetTypes,
     licenceTypes
   } = props;
-  const { scrollToTop } = useContext(ScrollToTopContext);
+  // const { scrollToTop } = useContext(ScrollToTopContext);
   const newTypes = { ...types };
   const newAssetTypes = { ...assetTypes };
 
@@ -50,7 +52,7 @@ const Footer = (props) => {
             // eslint-disable-next-line max-len
             href={`/search?${mode === 'internal'
               ? 'mode=solutions&' : ''}${licenceTypes.id}=${tag.id}&sort=${sortingQueriesConstants.default}`}
-            onClick={scrollToTop}
+            // onClick={scrollToTop}
             className={styles.tagsListItem}
             itemProp="url"
           >
@@ -90,7 +92,7 @@ const Footer = (props) => {
                           // eslint-disable-next-line max-len
                         href={`/search?${mode === 'internal'
                           ? 'mode=solutions&' : ''}${types.id}=${tag.id}&sort=${sortingQueriesConstants.default}`}
-                        onClick={scrollToTop}
+                        // onClick={scrollToTop}
                         className={styles.tagsListItem}
                         itemProp="url"
                       >
@@ -147,7 +149,7 @@ const Footer = (props) => {
                       <Link
                         key={tag.id}
                         href={link}
-                        onClick={scrollToTop}
+                        // onClick={scrollToTop}
                         className={styles.tagsListItem}
                         itemProp="url"
                       >
@@ -159,7 +161,7 @@ const Footer = (props) => {
               </li>
             )
             )}
-            <AboutUsLinks scrollToTop={scrollToTop} mode={mode} />
+            <AboutUsLinks  mode={mode} />
           </ul>
         </div>
       </div>
@@ -182,7 +184,7 @@ const Footer = (props) => {
               className={styles.link}
               itemProp="sameAs"
             >
-              <LinkedInIcon className={styles.icon} />
+              <Image src={LinkedInIcon} alt="linkedin" className={styles.icon} />
             </a>
           </div>
         </div>

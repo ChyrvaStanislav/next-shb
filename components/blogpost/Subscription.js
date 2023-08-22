@@ -1,17 +1,19 @@
-import React, { useContext, useState } from 'react';
+'use client'
+
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import ApiController from 'v2_common/api';
-import { checkValidEmail } from 'v2_common/utils/common';
-import { ArrowIcon } from 'v2_common/svgComponents';
-import { Link, Typography } from 'v2_main/components/html';
-import Preloader from 'v2_main/components/common/preloader/Preloader';
-import AppContext from 'v2_main/context/appContext';
-import SnackbarContext from 'v2_main/context/snackbar-context/SnackbarContext';
-import { isFormSubmitDisabled, setFormSubmitCounter } from 'v2_common/utils/spamProtection';
-import RequestLimiter from 'v2_main/components/common/form-components/request-limiter';
-import checkIfForbiddenZone from 'v2_common/utils/checkIfForbiddenZone';
-import { getToken } from 'v2_common/utils/cookieHelper';
+import ApiController from '@/api';
+import { checkValidEmail } from '@/utils/common';
+import { ArrowIcon } from '@/svgComponents';
+import { Link, Typography } from '@/components/html';
+import Preloader from '@/components/common/preloader/Preloader';
+// import AppContext from '@/context/appContext';
+// import SnackbarContext from '@/context/snackbar-context/SnackbarContext';
+import { isFormSubmitDisabled, setFormSubmitCounter } from '@/utils/spamProtection';
+import RequestLimiter from '@/components/common/form-components/request-limiter';
+import checkIfForbiddenZone from '@/utils/checkIfForbiddenZone';
+import { getToken } from '@/utils/cookieHelper';
 import RejectSubscription from './RejectSubscription';
 import styles from './Subscription.module.scss';
 
@@ -25,8 +27,8 @@ const Subscription = ({ mode, zones }) => {
   const [isTouched, setIsTouched] = useState(false);
   const { accessToken } = getToken();
 
-  const { formSubmissionLimit, globalVariables } = useContext(AppContext);
-  const { setSnackbarOpen } = useContext(SnackbarContext);
+  // const { formSubmissionLimit, globalVariables } = useContext(AppContext);
+  // const { setSnackbarOpen } = useContext(SnackbarContext);
   const [isSubmitDisabled, setIsSubmitDisabled] = useState(false);
   const [isForbidden, setIsForbidden] = useState(false);
 
@@ -67,11 +69,11 @@ const Subscription = ({ mode, zones }) => {
   };
 
   const sendRequest = () => {
-    setIsSubmitDisabled(isFormSubmitDisabled(+formSubmissionLimit));
-
-    if (isFormSubmitDisabled(+formSubmissionLimit)) {
-      return;
-    }
+    // setIsSubmitDisabled(isFormSubmitDisabled(+formSubmissionLimit));
+    //
+    // if (isFormSubmitDisabled(+formSubmissionLimit)) {
+    //   return;
+    // }
 
     setLoading(true);
     ApiController.sendQuestionForm({
@@ -80,7 +82,7 @@ const Subscription = ({ mode, zones }) => {
     })
       .then(({ data }) => {
         if (data === 'ok') {
-          const forbidden = checkIfForbiddenZone(globalVariables?.forbiddenZones, emailValue);
+          const forbidden = checkIfForbiddenZone(zones, emailValue);
           if (forbidden) {
             setIsForbidden(true);
           } else {
@@ -88,7 +90,7 @@ const Subscription = ({ mode, zones }) => {
             setIsValidEmail(true);
           }
           setError('');
-          setFormSubmitCounter(+formSubmissionLimit, () => {});
+          // setFormSubmitCounter(+formSubmissionLimit, () => {});
         }
         if (data === 'duplicate') {
           setError('Email has already been registered');
@@ -102,7 +104,7 @@ const Subscription = ({ mode, zones }) => {
       .catch(() => {
         setBadRequest(true);
         setError('Something went wrong');
-        setSnackbarOpen(true);
+        // setSnackbarOpen(true);
       })
       .finally(() => setLoading(false));
   };
@@ -180,7 +182,7 @@ const Subscription = ({ mode, zones }) => {
             <p className={classNames(styles.privacyPolicy, { [styles.privacyPolicyError]: ((emailValue && !isValidEmail) || badRequest) })}>
               By providing personal information I consent to EPAM Systems, Inc. processing my personal information as set out in the
               {' '}
-              <Link type="Link" to="/privacy-policy" target="_blank">SolutionsHub Privacy Policy</Link>
+              <Link type="Link" href="/privacy-policy" target="_blank">SolutionsHub Privacy Policy</Link>
               {' '}
               and outside of my home jurisdiction.
             </p>

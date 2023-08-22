@@ -57,7 +57,7 @@ const AdditionalBlogPost = ({
         {!['solution', 'blog'].some(item => mode === item) && (
           <footer className={styles.footerContainer}>
             <Button
-              to="/blog"
+              href="/blog"
               rel="noopener noreferrer"
               className={classNames(styles.btn, 'GoToAllArticles')}
             >

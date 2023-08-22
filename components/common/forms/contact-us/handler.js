@@ -1,6 +1,6 @@
 import React, { createContext, useState } from 'react';
 import PropTypes from 'prop-types';
-import { getToken } from '../../../../../v2_common/utils/cookieHelper';
+import { getToken } from '@/utils/cookieHelper';
 import Form from './index';
 
 export const ContuctUsFormContext = createContext({ openForm: false, setOpenForm: () => { } });

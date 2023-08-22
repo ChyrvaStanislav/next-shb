@@ -5,24 +5,24 @@ $color-button-disable: rgb(41 176 148 / 50%);
 
 .bgSubscription {
   position: relative;
-  background: url("~v2_common/images/subscription/bg_subscription-320.jpg") no-repeat center;
+  background: url("../../images/subscription/bg_subscription-320.jpg") no-repeat center;
   background-size: cover;
   min-height: 232px;
 
   @media (min-width: $bp-sm) {
-    background-image: url("~v2_common/images/subscription/bg_subscription-568.jpg");
+    background-image: url("../../images/subscription/bg_subscription-568.jpg");
   }
 
   @media (min-width: $bp-md) {
-    background-image: url("~v2_common/images/subscription/bg_subscription-768.jpg");
+    background-image: url("../../images/subscription/bg_subscription-768.jpg");
   }
 
   @media (min-width: $bp-lg) {
-    background-image: url("~v2_common/images/subscription/bg_subscription-1024.jpg");
+    background-image: url("../../images/subscription/bg_subscription-1024.jpg");
   }
 
   @media (min-width: $bp-xl) {
-    background-image: url("~v2_common/images/subscription/bg_subscription-1344.jpg");
+    background-image: url("../../images/subscription/bg_subscription-1344.jpg");
   }
 }
 

@@ -1,7 +1,10 @@
+'use client'
+
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import { Typography, Link } from 'v2_main/components/html';
+import { Typography } from '@/components/html';
+import Link from 'next/link';
 import CategoryLink from './CategoryLink';
 import styles from './BlogCategories.module.scss';
 
@@ -17,6 +20,7 @@ const BlogCategories = ({
   hasHighlight,
   isBlogPost,
 }) => {
+
   const getCategoryLink = category => {
     const isActive = (postTag ? category?.id === postTag?.toLowerCase() : categorySearch === category?.id);
 
@@ -55,7 +59,7 @@ const BlogCategories = ({
 
     return (
       <Link
-        to={`/blog${querySearch ? categoryParam : ''}`}
+        href={categoryParam ? `/blog/${categoryParam}` : '/blog'}
         onClick={() => {
           setCategory('');
           setMeta(defaultMeta);
@@ -76,7 +80,7 @@ const BlogCategories = ({
       </Typography>
       <ul className={styles.categoryList}>
         <li className={styles.categoryItem}>
-          {getAllStoriesLink()}
+          {/*{getAllStoriesLink()}*/}
         </li>
         {categoryList.map(category => (
           <li className={styles.categoryItem} key={category.id}>
@@ -90,10 +94,10 @@ const BlogCategories = ({
 
 BlogCategories.propTypes = {
   categoryList: PropTypes.arrayOf(PropTypes.any),
-  setCategory: PropTypes.func.isRequired,
+  setCategory: PropTypes.func,
   categorySearch: PropTypes.string,
   menuTitle: PropTypes.string,
-  setMeta: PropTypes.func.isRequired,
+  setMeta: PropTypes.func,
   defaultMeta: PropTypes.shape({}),
   querySearch: PropTypes.string,
   postTag: PropTypes.string,
@@ -103,6 +107,8 @@ BlogCategories.propTypes = {
 
 BlogCategories.defaultProps = {
   categoryList: [],
+  setCategory: () => {},
+  setMeta: () => {},
   categorySearch: '',
   menuTitle: '',
   defaultMeta: {},

@@ -1,7 +1,9 @@
+'use client'
+
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import { isEmpty } from 'lodash';
-import ApiController from 'v2_common/api';
+import isEmpty from 'lodash.isempty';
+import ApiController from '@/api';
 import classNames from 'classnames';
 import styles from './ThematicContent.module.scss';
 import ThematicContentPost from './ThematicContentPost';

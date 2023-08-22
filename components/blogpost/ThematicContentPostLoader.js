@@ -1,5 +1,5 @@
 import React from 'react';
-import ContentLoader from 'v2_main/components/common/content-loader';
+import ContentLoader from '@/components/common/content-loader';
 import styles from './ThematicContent.module.scss';
 
 const ThematicContentPostLoader = () => (

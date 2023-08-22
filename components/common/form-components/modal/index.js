@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 import { CSSTransition } from 'react-transition-group';
 import { enableBody, disableBody } from './utils';
 import styles from './styles.module.scss';
-// import './animation.scss';
 
 const Modal = ({
   children, open, setOpen, onClose

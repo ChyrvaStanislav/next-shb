@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link, Typography } from 'v2_main/components/html';
+import { Link, Typography } from '@/components/html';
 import classNames from 'classnames';
 import styles from './CategoryLink.module.scss';
 
@@ -23,7 +23,7 @@ const CategoryLink = ({
 
   return (
     <Link
-      to={`/blog?category=${category?.id}${querySearch ? categoryAdditionalParam : ''}`}
+      href={`/${category?.id}${querySearch ? categoryAdditionalParam : ''}`}
       onClick={() => {
         setCategory(category?.id);
         if (category?.meta) {

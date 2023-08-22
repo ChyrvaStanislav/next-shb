@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import FieldControl from '../field-control';
-import removeHTML from '../../../../../v2_common/utils/removeHTML';
+import removeHTML from '@/utils/removeHTML';
 import styles from './styles.module.scss';
 import Counter from '../counter';
 

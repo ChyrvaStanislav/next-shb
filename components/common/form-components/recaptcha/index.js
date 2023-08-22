@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { isEmpty } from 'lodash';
+import isEmpty from 'lodash.isempty';
 import PropTypes from 'prop-types';
 import ReCAPTCHA from 'react-google-recaptcha';
 import FieldControl from '../field-control';

@@ -13,7 +13,7 @@ import SomethingWrong from 'v2_main/components/common/something-wrong';
  * 2. Reload the page if first time catch error
  * 3. If that doesn't help, return SomethingWrong component
  *
- * @param componentImport {function} example: "() => import('v2_main/pages/home')"
+ * @param componentImport {function} example: "() => import('v2_main/pages-components/home')"
  * @return {React.LazyExoticComponent<React.ComponentType<any>>}
  */
 const lazyWithRetry = componentImport => lazy(async () => {

@@ -2,7 +2,7 @@ import React, { useState, useContext, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { Typography } from '../../../html';
-import { Cross } from '../../../../../v2_common/svg';
+import Cross from '@/images/svg/cross.svg';
 import { Formik, Form, Field } from 'formik';
 import InputText from '../../form-components/input-text';
 import Textarea from '../../form-components/textarea';
@@ -10,19 +10,20 @@ import Textarea from '../../form-components/textarea';
 import Checkbox from '../../form-components/checkbox';
 import Recaptcha from '../../form-components/recaptcha';
 import ButtonControl from '../../form-components/button/ButtonControl';
-import ApiController from '../../../../../v2_common/api/index';
+import ApiController from '@/api/index';
 import { confirmText } from '../config';
 import { getPhoneNumberForForm } from '../../form-components/country-select/util';
 import RequestLimiter from '../../form-components/request-limiter';
-import { isFormSubmitDisabled, setFormSubmitCounter } from '../../../../../v2_common/utils/spamProtection';
+import { isFormSubmitDisabled, setFormSubmitCounter } from '@/utils/spamProtection';
 // import AppContext from 'v2_main/context/appContext';
 // import SnackbarContext from 'v2_main/context/snackbar-context/SnackbarContext';
-import GAHoverEventsHandler from '../../../../../v2_common/utils/GAHoverEventsHandler';
+import GAHoverEventsHandler from '@/utils/GAHoverEventsHandler';
 import { engModeValidationSchema } from '../yup.util';
 // import useEngMode from 'v2_main/hooks/useEngMode';
 import { initialValues, validationSchema, validationSchemaInternal } from './utils';
 import styles from './styles.module.scss';
 import formStyles from '../Forms.module.scss';
+import Image from "next/image";
 
 
 const FormComponent = ({
@@ -106,7 +107,9 @@ const FormComponent = ({
                   <Typography type="h4" className={formStyles.title}>
                     Contact SolutionsHub
                   </Typography>
-                  <Cross
+                  <Image
+                    src={Cross}
+                    alt="cross"
                     className={formStyles.cross}
                     onClick={() => {
                       setOpen(false);

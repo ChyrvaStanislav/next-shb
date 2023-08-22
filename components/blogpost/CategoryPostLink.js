@@ -11,7 +11,7 @@ const CategoryPostLink = ({
 
   return (
     <Link
-      to={`/blog?category=${category?.id}${querySearch ? queryParam : ''}`}
+      href={`/blog?category=${category?.id}${querySearch ? queryParam : ''}`}
       onClick={() => {
         setCategory(category?.id);
         if (category?.meta) {

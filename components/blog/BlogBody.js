@@ -77,7 +77,7 @@ const BlogBody = ({
   }, [data]);
 
   const categoriesMenuTitle = getLabel('Blog Categories Title', globalVariables);
-  const bannerItem = filteredPageBanners.find(item => item.id === categorySearch)?.slides[0] || banner;
+  const bannerItem = filteredPageBanners?.find(item => item.id === categorySearch)?.slides[0] || banner;
 
   const onClearSearch = () => {
     const categoryParam = `?category=${categorySearch}`;

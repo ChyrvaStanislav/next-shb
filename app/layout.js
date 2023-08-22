@@ -2,6 +2,7 @@ import './globals.scss'
 import { Inter } from 'next/font/google'
 import Header from "@/components/common/header";
 import Client from "@/client";
+import Footer from "@/components/common/footer";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -30,9 +31,18 @@ const RootLayout = async ({ children }) =>  {
         assetTypes={data?.internalCategoryContainer?.types}
         licenceTypes={data?.categoryContainer?.licenceTypes}
       />
-      <main style={{ marginTop: 100 }}>
+      <main style={{ marginTop: 60 }}>
         {children}
       </main>
+    <Footer
+      categories={data?.categoryContainer?.categories}
+      internalCategories={data?.internalCategoryContainer?.categories}
+      mode='external'
+      globalVariables={data?.globalVariables}
+      types={data?.categoryContainer?.types}
+      assetTypes={data?.internalCategoryContainer?.types}
+      licenceTypes={data?.categoryContainer?.licenceTypes}
+    />
     </body>
     </html>
   )

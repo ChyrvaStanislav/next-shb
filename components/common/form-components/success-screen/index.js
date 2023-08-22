@@ -1,11 +1,12 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { isEmpty } from 'lodash';
+import isEmpty from 'lodash.isempty';
 import { Button } from '../../../html';
 import classNames from 'classnames';
-import { Cross } from '../../../../../v2_common/svg';
-import sortingQueriesConstants from '../../../../../v2_common/constants/sortingQueries';
+import Cross from '@/images/svg/cross.svg';
+import sortingQueriesConstants from '@/constants/sortingQueries';
 import styles from './styles.module.scss';
+import Image from "next/image";
 
 const SuccessScreen = ({
   title,
@@ -29,7 +30,9 @@ const SuccessScreen = ({
   return (
     <div className={classNames(styles.SuccessScreen, styles[design])}>
       {design === 'default' && (
-        <Cross
+        <Image
+          src={Cross}
+          alt="cross"
           className={styles.cross}
           onClick={onFormClose}
         />
@@ -85,7 +88,7 @@ SuccessScreen.propTypes = {
     'main-question',
     'inventory-solution',
     'inventory-support',
-    'inventory-error-pages',
+    'inventory-error-pages-components',
     'main-submit',
     null
   ]),

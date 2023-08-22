@@ -1,5 +1,5 @@
 import * as Yup from 'yup';
-import { getToken } from '../../../../../v2_common/utils/cookieHelper';
+import { getToken } from '@/utils/cookieHelper';
 import { phoneNumberSchema } from '../yup.util';
 import {
   NAMES_REGEX,
@@ -15,7 +15,7 @@ import {
   EMAIL_REGEX,
 } from '../config';
 import jwtDecode from 'jwt-decode';
-import isPersonalEmail from '../../../../../v2_common/utils/isPersonalEmail';
+import isPersonalEmail from '@/utils/isPersonalEmail';
 
 const { accessToken } = getToken();
 let tokenData;
