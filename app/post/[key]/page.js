@@ -83,6 +83,7 @@ const BlogPost = async ({ params }) => {
               itemProp="image"
               width="600"
               height="300"
+              priority={true}
             />
           </figure>
 

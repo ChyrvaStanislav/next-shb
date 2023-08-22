@@ -101,9 +101,12 @@ const BlogPostAdvertising = ({ data }) => {
                   media="(min-width: 568px) and (max-width: 1023px)"
                   src={getImageCMS(imageForTablet)}
                 />
-                <img
+                <Image
                   src={getImageCMS(imageForDesktop)}
                   alt="Blog Post Advertising"
+                  fill={true}
+                  width={300}
+                  height={200}
                 />
               </picture>
             </div>
