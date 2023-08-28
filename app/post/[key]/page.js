@@ -105,7 +105,7 @@ const BlogPost = async ({ params }) => {
             </div>
           </>
 
-          <Subscription zones={data?.body?.globalVariables?.forbiddenZones} />
+          {/*<Subscription zones={data?.body?.globalVariables?.forbiddenZones} />*/}
         </div>
       </section>
     </div>
