@@ -75,7 +75,7 @@ const BlogPage = async ({ body, blogsData, category, page }) => {
       </main>
 
       <ThematicContent relatedPosts={body?.recommendedPostsReferences} withBottomPadding={true} />
-      <Subscription zones={body?.globalVariables?.forbiddenZones} />
+      {/*<Subscription zones={body?.globalVariables?.forbiddenZones} />*/}
     </div>
   )
 }
