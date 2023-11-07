@@ -13,8 +13,6 @@ const ThematicContent = ({ postsId, relatedPosts, withBottomPadding }) => {
   const [posts, setPosts] = useState(relatedPosts || []);
   const [isLoading, setIsLoading] = useState(false);
 
-  console.log(relatedPosts)
-
   useEffect(() => {
     if (!relatedPosts) {
       (async () => {

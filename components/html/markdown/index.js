@@ -1,3 +1,4 @@
+
 /* eslint-disable react/no-children-prop */
 import React, { forwardRef, useContext } from 'react';
 import PropTypes from 'prop-types';
@@ -70,7 +71,7 @@ const Markdown = forwardRef(({
     a: props => (
       <a
         href={isExternalLink(props?.href) ? props?.href : removeAbsolutePath(props?.href)}
-        onMouseMove={isLinkTooltip(props) ? parseHref : null}
+        // onMouseMove={isLinkTooltip(props) ? parseHref : null}
         data-tip={isLinkTooltip(props) ? true : null}
         data-for={isLinkTooltip(props) ? 'link-tooltip' : null}
         target={linkTarget}
@@ -92,7 +93,7 @@ const Markdown = forwardRef(({
     a: props => (
       <a
         href={isExternalLink(props?.href) ? props?.href : removeAbsolutePath(props?.href)}
-        onMouseMove={isLinkTooltip(props) ? parseHref : null}
+        // onMouseMove={isLinkTooltip(props) ? parseHref : null}
         data-tip={isLinkTooltip(props) ? true : null}
         data-for={isLinkTooltip(props) ? 'link-tooltip' : null}
         target={linkTarget}
